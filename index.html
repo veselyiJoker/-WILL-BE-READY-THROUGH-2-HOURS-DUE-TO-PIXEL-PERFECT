@@ -386,30 +386,6 @@
                     </li>
                 </ul>
             </div>
-            <form class="contact-form visualy-hidden" action="#" method="post" enctype="multipart/form-data">
-                <button class="contact-form__exit-btn" type="button"></button>
-                <h3 class="contact-form__title">Заказать звонок</h3>
-                <p class="contact-form__description">Отвечаем и звоним каждый день, с 10:00 ДО 24:00</p>
-                <div class="contact-form__content">
-                    <div class="contact-form__block">
-                        Как к вам обращаться? <br>
-                        <input class="contact-form__input" type="text">
-                    </div>
-                    <div class="contact-form__block">
-                        Номер телефона <br>
-                        <input class="contact-form__input" type="tel" placeholder="+7 ( _ _ _ ) _ _ _ – _ _ – _ _">
-                    </div>
-                    <div class="contact-form__block">
-                        Нажимая на кнопку "Заказать звонок", я даю
-                        <a href="#" class="contact-form__input" title="consent to the processing of personal data">
-                            согласие на обработку персональных данных
-                        </a>
-                    </div>
-                    <div class="contact-form__block">
-                        <button class="contact-form__send-btn" type="button">Заказать звонок ➜</button>
-                    </div>
-                </div>
-            </form>
         </section>
         <section class="how-to-care">
             <div class="container">
@@ -909,6 +885,30 @@
             </div>
         </div>
     </footer>
+    <section class="modal modal--hidden">
+        <h2 class="modal__title">Заказать звонок</h2>
+        <p class="modal__description">Отвечаем и звоним каждый день, с 10:00 ДО 24:00</p>
+        <button class="modal__exit-btn" type="button"></button>
+        <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
+            <p class="modal__paragraph">
+                <label class="modal__label" for="user-name">Как к вам обращаться?</label>
+                <input class="contact-form__input" type="text">
+            </p>
+            <p class="modal__paragraph">
+                <label class="modal__label" for="user-number">Номер телефона</label>
+                <input class="modal__input" type="tel" placeholder="+7 ( _ _ _ ) _ _ _ – _ _ – _ _">
+            </p>
+            <p class="modal__paragraph">
+                Нажимая на кнопку "Заказать звонок", я даю
+                <a href="#" class="modal__link" title="consent to the processing of personal data">
+                    согласие на обработку персональных данных
+                </a>
+            </p>
+            <div class="modal__send-btn-wrapper">
+                <button class="modal__send-btn" type="button">Заказать звонок ➜</button>
+            </div>
+        </form>
+    </section>
     <script src="js/main.js"></script>
 </body>
 
