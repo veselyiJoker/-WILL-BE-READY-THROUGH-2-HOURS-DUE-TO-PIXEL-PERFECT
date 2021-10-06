@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Maine Coon</title>
     <!-- 
-        Так как при вёрстке данного шаблона используется BEM, а BEM в будущем подразумевает избавление от вложенности
-        cтилей у CSS, то каждому тегу будет присвоен отдельный класс
-
         Если вам не нравится мой код вот вам парочка шуток для поднятия настроения :)
         * 50 оттенков серого
             #4е5054, #272721, #282828, #292929, #22Ъ2Ъ, #2с2с2с, #2е2е2е,
@@ -62,11 +58,7 @@
                 </ul>
             </nav>
             <a class="logo" href="#" title="logo link to maine coon home page">
-                <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M49.7814 40.2838H9.21869C8.82465 40.2838 8.47439 40.0332 8.34674 39.6608L2.28311 21.9753C2.11853 21.4931 2.37489 20.9693 2.8565 20.8037C3.0042 20.7536 3.15823 20.7409 3.30119 20.7662C3.63457 20.7857 3.94526 20.9872 4.08927 21.3143C4.83885 23.0165 7.50537 28.512 10.616 28.512C10.6546 28.512 10.6936 28.511 10.7331 28.5089C12.6095 28.4255 15.544 26.2601 18.8688 16.4233C18.9959 16.0488 19.3467 15.7966 19.7418 15.7966C20.1374 15.7966 20.4882 16.0488 20.6154 16.4233C21.7505 19.7777 25.5554 28.4577 29.5064 28.4577C29.5169 28.4577 29.527 28.4572 29.538 28.4572C31.4112 28.4345 34.2914 26.3324 37.3757 16.4439C37.4964 16.0583 37.8525 15.7966 38.2561 15.7966H38.265C38.6722 15.8009 39.0283 16.0709 39.1412 16.4618C40.0838 19.7081 43.4271 28.2108 47.5279 28.5659C49.9239 28.7631 52.5803 26.0518 55.2031 20.6961C55.4162 20.2588 55.9342 20.062 56.3842 20.2493C56.8331 20.4355 57.0609 20.9387 56.9037 21.3997L50.6539 39.6608C50.5257 40.0337 50.1755 40.2838 49.7814 40.2838ZM9.87702 38.4401H49.122L52.7338 27.887C50.9883 29.7343 49.2159 30.5582 47.3676 30.4031C42.8258 30.008 39.7093 23.4633 38.2603 19.6163C35.7008 26.7607 32.8434 30.2618 29.5591 30.3003C29.5412 30.3003 29.5243 30.3013 29.5064 30.3013C24.9166 30.3013 21.3734 23.265 19.7682 19.3836C17.0294 26.6109 14.0902 30.2043 10.8149 30.3509C9.13588 30.4158 7.67364 29.5792 6.4145 28.338L9.87702 38.4401Z"
-                        fill="#A07B50" stroke="#1F1C1D" stroke-width="0.8" />
-                </svg>
+                <img class="logo__img" src="img/logo.svg" alt="main coon logo image">
             </a>
         </div>
     </header>
@@ -80,43 +72,38 @@
                         Первый питомник с расширенным <br>
                         спектором услуг
                     </p>
-                    <!-- так как есть вкладка в меню питомник предпологаю что это ссылка -->
                     <a class="home__nursery-link" href="#" title="link to the nursery's page">Смотреть котиков</a>
                     <ul class="home__social-list">
                         <li class="home__social-item">
                             <a class="home__social-link" href="#" title="vk">
+                                <span class="hidden-info">иконка vk</span>
                                 <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M12.8841 7.1355C12.8492 7.0724 12.633 6.56585 11.593 5.52472C10.5041 4.43452 10.6504 4.61154 11.9619 2.72647C12.7606 1.57842 13.08 0.877323 12.98 0.577604C12.8849 0.291906 12.2975 0.367274 12.2975 0.367274L10.3441 0.379543C10.3441 0.379543 10.1994 0.35851 10.0914 0.427744C9.98654 0.496101 9.9191 0.653848 9.9191 0.653848C9.9191 0.653848 9.60951 1.54249 9.19673 2.29792C8.32648 3.89204 7.97789 3.97617 7.83569 3.87714C7.50498 3.64666 7.58786 2.94994 7.58786 2.45567C7.58786 0.910625 7.80482 0.266491 7.16452 0.0999807C6.95163 0.0447692 6.79562 0.00796159 6.25202 0.00182698C5.55484 -0.00606037 4.96411 0.0044561 4.63015 0.180607C4.40751 0.298041 4.23605 0.560076 4.34088 0.574975C4.47007 0.593378 4.76259 0.659983 4.91779 0.887839C5.11849 1.18142 5.11118 1.84221 5.11118 1.84221C5.11118 1.84221 5.22657 3.66068 4.84222 3.88678C4.57814 4.0419 4.21655 3.72553 3.44056 2.27864C3.04322 1.53811 2.74257 0.7187 2.74257 0.7187C2.74257 0.7187 2.68488 0.566211 2.58168 0.484708C2.45655 0.385678 2.28104 0.354129 2.28104 0.354129L0.423525 0.366398C0.423525 0.366398 0.144817 0.375162 0.0424345 0.505741C-0.0485722 0.622299 0.0351215 0.862424 0.0351215 0.862424C0.0351215 0.862424 1.4896 4.53179 3.13585 6.38182C4.6464 8.0776 6.3609 7.9663 6.3609 7.9663H7.13771C7.13771 7.9663 7.37254 7.93825 7.49198 7.79891C7.60249 7.67096 7.59843 7.43083 7.59843 7.43083C7.59843 7.43083 7.58299 6.30645 8.06727 6.14081C8.54425 5.97781 9.15692 7.22752 9.80615 7.70864C10.2969 8.07234 10.6699 7.99259 10.6699 7.99259L12.4063 7.9663C12.4063 7.9663 13.3148 7.90583 12.8841 7.1355Z"
-                                        fill="white" />
+                                    <path d="M12.8841 7.1355C12.8492 7.0724 12.633 6.56585 11.593 5.52472C10.5041 4.43452 10.6504 4.61154 11.9619 2.72647C12.7606 1.57842 13.08 0.877323 12.98 0.577604C12.8849 0.291906 12.2975 0.367274 12.2975 0.367274L10.3441 0.379543C10.3441 0.379543 10.1994 0.35851 10.0914 0.427744C9.98654 0.496101 9.9191 0.653848 9.9191 0.653848C9.9191 0.653848 9.60951 1.54249 9.19673 2.29792C8.32648 3.89204 7.97789 3.97617 7.83569 3.87714C7.50498 3.64666 7.58786 2.94994 7.58786 2.45567C7.58786 0.910625 7.80482 0.266491 7.16452 0.0999807C6.95163 0.0447692 6.79562 0.00796159 6.25202 0.00182698C5.55484 -0.00606037 4.96411 0.0044561 4.63015 0.180607C4.40751 0.298041 4.23605 0.560076 4.34088 0.574975C4.47007 0.593378 4.76259 0.659983 4.91779 0.887839C5.11849 1.18142 5.11118 1.84221 5.11118 1.84221C5.11118 1.84221 5.22657 3.66068 4.84222 3.88678C4.57814 4.0419 4.21655 3.72553 3.44056 2.27864C3.04322 1.53811 2.74257 0.7187 2.74257 0.7187C2.74257 0.7187 2.68488 0.566211 2.58168 0.484708C2.45655 0.385678 2.28104 0.354129 2.28104 0.354129L0.423525 0.366398C0.423525 0.366398 0.144817 0.375162 0.0424345 0.505741C-0.0485722 0.622299 0.0351215 0.862424 0.0351215 0.862424C0.0351215 0.862424 1.4896 4.53179 3.13585 6.38182C4.6464 8.0776 6.3609 7.9663 6.3609 7.9663H7.13771C7.13771 7.9663 7.37254 7.93825 7.49198 7.79891C7.60249 7.67096 7.59843 7.43083 7.59843 7.43083C7.59843 7.43083 7.58299 6.30645 8.06727 6.14081C8.54425 5.97781 9.15692 7.22752 9.80615 7.70864C10.2969 8.07234 10.6699 7.99259 10.6699 7.99259L12.4063 7.9663C12.4063 7.9663 13.3148 7.90583 12.8841 7.1355Z" fill="white" />
                                 </svg>
                             </a>
                         </li>
                         <li class="home__social-item">
                             <a class="home__social-link" href="#" title="twitter">
+                                <span class="hidden-info">иконка twitter</span>
                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.3758 4.62011C14.2231 4.55022 14.7977 4.16506 15.0189 3.64245C14.7133 3.83019 13.7646 4.03487 13.2407 3.83994C13.215 3.71684 13.1863 3.59991 13.1581 3.49434C12.7589 2.02841 11.392 0.847405 9.9598 0.990077C10.0757 0.943291 10.1932 0.899732 10.3104 0.860627C10.468 0.804161 11.393 0.653668 11.2473 0.327185C11.1246 0.040017 9.99448 0.544209 9.7817 0.610109C10.0626 0.504473 10.5271 0.322766 10.5769 0C10.1466 0.0590258 9.72411 0.262477 9.3977 0.558308C9.51554 0.431453 9.60494 0.276857 9.62391 0.110476C8.47615 0.843722 7.80569 2.322 7.26309 3.75598C6.83704 3.34308 6.45942 3.01793 6.12066 2.83738C5.17032 2.32775 4.03403 1.79603 2.25031 1.13387C2.19557 1.72402 2.54218 2.50872 3.54095 3.03055C3.32456 3.00159 2.92885 3.06622 2.61236 3.14201C2.74125 3.81809 3.16218 4.3751 4.30173 4.64445C3.78095 4.67882 3.51181 4.79733 3.26789 5.05276C3.50508 5.52297 4.08387 6.07637 5.12504 5.96277C3.96746 6.4617 4.65305 7.38567 5.59497 7.24787C3.98812 8.90757 1.45474 8.78559 0 7.39742C3.79824 12.573 12.0547 10.4583 13.2852 5.47317C14.207 5.48102 14.749 5.15384 15.085 4.79312C14.5539 4.88326 13.784 4.79011 13.3758 4.62011Z"
-                                        fill="white" />
+                                    <path d="M13.3758 4.62011C14.2231 4.55022 14.7977 4.16506 15.0189 3.64245C14.7133 3.83019 13.7646 4.03487 13.2407 3.83994C13.215 3.71684 13.1863 3.59991 13.1581 3.49434C12.7589 2.02841 11.392 0.847405 9.9598 0.990077C10.0757 0.943291 10.1932 0.899732 10.3104 0.860627C10.468 0.804161 11.393 0.653668 11.2473 0.327185C11.1246 0.040017 9.99448 0.544209 9.7817 0.610109C10.0626 0.504473 10.5271 0.322766 10.5769 0C10.1466 0.0590258 9.72411 0.262477 9.3977 0.558308C9.51554 0.431453 9.60494 0.276857 9.62391 0.110476C8.47615 0.843722 7.80569 2.322 7.26309 3.75598C6.83704 3.34308 6.45942 3.01793 6.12066 2.83738C5.17032 2.32775 4.03403 1.79603 2.25031 1.13387C2.19557 1.72402 2.54218 2.50872 3.54095 3.03055C3.32456 3.00159 2.92885 3.06622 2.61236 3.14201C2.74125 3.81809 3.16218 4.3751 4.30173 4.64445C3.78095 4.67882 3.51181 4.79733 3.26789 5.05276C3.50508 5.52297 4.08387 6.07637 5.12504 5.96277C3.96746 6.4617 4.65305 7.38567 5.59497 7.24787C3.98812 8.90757 1.45474 8.78559 0 7.39742C3.79824 12.573 12.0547 10.4583 13.2852 5.47317C14.207 5.48102 14.749 5.15384 15.085 4.79312C14.5539 4.88326 13.784 4.79011 13.3758 4.62011Z" fill="white" />
                                 </svg>
                             </a>
                         </li>
                         <li class="home__social-item">
                             <a class="home__social-link" href="#" title="facebook">
+                                <span class="hidden-info">иконка facebook</span>
                                 <svg width="6" height="12" viewBox="0 0 6 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.09903 2.72854C1.09903 3.00311 1.09903 4.22865 1.09903 4.22865H0V6.06299H1.09903V11.514H3.35667V6.06314H4.87165C4.87165 6.06314 5.01353 5.18359 5.08231 4.22189C4.88513 4.22189 3.36521 4.22189 3.36521 4.22189C3.36521 4.22189 3.36521 3.15472 3.36521 2.96767C3.36521 2.78022 3.61136 2.52806 3.85465 2.52806C4.09748 2.52806 4.60999 2.52806 5.08469 2.52806C5.08469 2.27831 5.08469 1.41538 5.08469 0.618408C4.45099 0.618408 3.73004 0.618408 3.41225 0.618408C1.04322 0.618282 1.09903 2.45445 1.09903 2.72854Z"
-                                        fill="white" />
+                                    <path d="M1.09903 2.72854C1.09903 3.00311 1.09903 4.22865 1.09903 4.22865H0V6.06299H1.09903V11.514H3.35667V6.06314H4.87165C4.87165 6.06314 5.01353 5.18359 5.08231 4.22189C4.88513 4.22189 3.36521 4.22189 3.36521 4.22189C3.36521 4.22189 3.36521 3.15472 3.36521 2.96767C3.36521 2.78022 3.61136 2.52806 3.85465 2.52806C4.09748 2.52806 4.60999 2.52806 5.08469 2.52806C5.08469 2.27831 5.08469 1.41538 5.08469 0.618408C4.45099 0.618408 3.73004 0.618408 3.41225 0.618408C1.04322 0.618282 1.09903 2.45445 1.09903 2.72854Z" fill="white" />
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <img class="home__external-img" width="1068" height="712" src="img/home-main-coon.png"
-                    alt="orange maine coon photo">
+                <img class="home__external-img" width="1068" height="712" src="img/home-main-coon.png" alt="orange maine coon photo">
             </div>
         </section>
         <section class="pets">
@@ -129,79 +116,63 @@
                         отметками о прививках и документ с родословной
                     </p>
                 </div>
-                <!-- Так как в секции есть кнопка смотреть больше делаю вывод что данные
-                будут подгружаться из вне так что элементы навигации будут ссылками -->
                 <ul class="pets__nav">
                     <li class="pets__nav-item pets__nav-item--active">
-                        <a class="pets__nav-link" href="#">Коты</a>
+                        <button class="pets__nav-btn" type="button" href="#">Коты</button>
                     </li>
                     <li class="pets__nav-item">
-                        <a class="pets__nav-link" href="#">Кошки</a>
+                        <button class="pets__nav-btn" type="button" href="#">Кошки</button>
                     </li>
                     <li class="pets__nav-item">
-                        <a class="pets__nav-link" href="#">Котята</a>
+                        <button class="pets__nav-btn" type="button" href="#">Котята</button>
                     </li>
                 </ul>
                 <div class="pets__sliders-container">
                     <div class="slider pets__slider">
                         <div class="slider__items-wrapper pets__slider-items-wrapper">
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="520" height="214" src="img/cat1.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="520" height="214" src="img/cat1.png" alt="main coon photo">
                             </div>
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="520" height="241" src="img/cat2.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="520" height="241" src="img/cat2.png" alt="main coon photo">
                             </div>
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="530" height="530" src="img/cat3.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="530" height="530" src="img/cat3.png" alt="main coon photo">
                             </div>
                         </div>
                         <!-- стрелочки для кнопок будут прописаны через after -->
                         <button class="slider__next-btn pets__slider-next-btn visualy-hidden" type="button"></button>
-                        <button class="slider__previous-btn pets__slider-previous-btn visualy-hidden"
-                            type="button"></button>
+                        <button class="slider__previous-btn pets__slider-previous-btn visualy-hidden" type="button"></button>
                     </div>
                     <div class="slider pets__slider visualy-hidden">
                         <div class="slider__items-wrapper pets__slider-items-wrapper">
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="520" height="214" src="img/cat1.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="520" height="214" src="img/cat1.png" alt="main coon photo">
                             </div>
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="520" height="241" src="img/cat2.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="520" height="241" src="img/cat2.png" alt="main coon photo">
                             </div>
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="530" height="530" src="img/cat3.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="530" height="530" src="img/cat3.png" alt="main coon photo">
                             </div>
                         </div>
-                        <!-- стрелочки для кнопок будут прописаны через after -->
                         <button class="slider__next-btn pets__slider-next-btn visualy-hidden" type="button"></button>
-                        <button class="slider__previous-btn pets__slider-previous-btn visualy-hidden"
-                            type="button"></button>
+                        <button class="slider__previous-btn pets__slider-previous-btn visualy-hidden" type="button"></button>
                     </div>
                     <div class="slider pets__slider visualy-hidden">
                         <div class="slider__items-wrapper pets__slider-items-wrapper">
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="520" height="214" src="img/cat1.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="520" height="214" src="img/cat1.png" alt="main coon photo">
                             </div>
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="520" height="241" src="img/cat2.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="520" height="241" src="img/cat2.png" alt="main coon photo">
                             </div>
                             <div class="slider__item pets__slider-item">
-                                <img class="pets__slider-img" width="530" height="530" src="img/cat3.png"
-                                    alt="main coon photo">
+                                <img class="pets__slider-img" width="530" height="530" src="img/cat3.png" alt="main coon photo">
                             </div>
                         </div>
-                        <!-- стрелочки для кнопок будут прописаны через after -->
                         <button class="slider__next-btn pets__slider-next-btn visualy-hidden" type="button"></button>
-                        <button class="slider__previous-btn pets__slider-previous-btn visualy-hidden"
-                            type="button"></button>
+                        <button class="slider__previous-btn pets__slider-previous-btn visualy-hidden" type="button"></button>
                     </div>
                 </div>
                 <a class="show-more" href="#" title="show more cats">Смотреть больше</a>
@@ -217,8 +188,7 @@
                     </p>
                 </div>
                 <div class="features__content">
-                    <img class="features__main-coon-img" width="623" height="908" src="img/features-main-coon.png"
-                        alt="Maine coon photo">
+                    <img class="features__main-coon-img" width="623" height="908" src="img/features-main-coon.png" alt="Maine coon photo">
                     <ul class="features__list">
                         <li class="features__item">Легко уживается в семьях с детьми или другими животными</li>
                         <li class="features__item">Внешний вид этой кошки похож на дикую рысь</li>
@@ -236,6 +206,7 @@
                 </div>
                 <ul class="advantages__list">
                     <li class="advantages__item">
+                        <span class="hidden-info">Иконка бесплатного ветеринарного обслуживания</span>
                         <svg width="99" height="107" viewBox="0 0 99 107" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <mask id="path-1-inside-1" fill="white">
@@ -308,6 +279,7 @@
                         <p class="advantages__text">Бесплатное ветеринарное обслуживание 5 лет</p>
                     </li>
                     <li class="advantages__item">
+                        <span class="hidden-info">Иконка работы 24 часа в сутки</span>
                         <svg width="107" height="97" viewBox="0 0 107 97" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <mask id="path-1-inside-2" fill="white">
@@ -366,6 +338,7 @@
                         <p class="advantages__text">Консультирование по любому вопросу 24 часа в сутки</p>
                     </li>
                     <li class="advantages__item">
+                        <span class="hidden-info">Иконка корма для кота</span>
                         <svg width="71" height="108" viewBox="0 0 71 108" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <mask id="path-1-inside-3" fill="white">
@@ -505,6 +478,7 @@
                                 <ul class="team__social-list">
                                     <li class="team__social-item">
                                         <a class="team__social-link" href="#" title="facebook">
+                                            <span class="hidden-info">иконка facebook</span>
                                             <svg width="6" height="12" viewBox="0 0 6 12" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -515,6 +489,7 @@
                                     </li>
                                     <li class="team__social-item">
                                         <a class="team__social-link" href="#" title="twitter">
+                                            <span class="hidden-info">иконка twitter</span>
                                             <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -525,6 +500,7 @@
                                     </li>
                                     <li class="team__social-item">
                                         <a class="team__social-link" href="#" title="vk">
+                                            <span class="hidden-info">иконка vk</span>
                                             <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -550,6 +526,7 @@
                                     <ul class="team__social-list">
                                         <li class="team__social-item">
                                             <a class="team__social-link" href="#" title="facebook">
+                                                <span class="hidden-info">иконка facebook</span>
                                                 <svg width="6" height="12" viewBox="0 0 6 12" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -560,6 +537,7 @@
                                         </li>
                                         <li class="team__social-item">
                                             <a class="team__social-link" href="#" title="twitter">
+                                                <span class="hidden-info">иконка twitter</span>
                                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -570,6 +548,7 @@
                                         </li>
                                         <li class="team__social-item">
                                             <a class="team__social-link" href="#" title="vk">
+                                                <span class="hidden-info">иконка vk</span>
                                                 <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -595,6 +574,7 @@
                                         <ul class="team__social-list">
                                             <li class="team__social-item">
                                                 <a class="team__social-link" href="#" title="facebook">
+                                                    <span class="hidden-info">иконка facebook</span>
                                                     <svg width="6" height="12" viewBox="0 0 6 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -605,6 +585,7 @@
                                             </li>
                                             <li class="team__social-item">
                                                 <a class="team__social-link" href="#" title="twitter">
+                                                    <span class="hidden-info">иконка twitter</span>
                                                     <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -615,6 +596,7 @@
                                             </li>
                                             <li class="team__social-item">
                                                 <a class="team__social-link" href="#" title="vk">
+                                                    <span class="hidden-info">иконка vk</span>
                                                     <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -773,6 +755,7 @@
                                     <ul class="reviews__soutial-list">
                                         <li class="reviews__social-item">
                                             <a class="reviews__social-link" href="#" title="twitter">
+                                                <span class="hidden-info">иконка twitter</span>
                                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -783,6 +766,7 @@
                                         </li>
                                         <li class="reviews__social-item">
                                             <a class="reviews__social-link" href="#" title="vk">
+                                                <span class="hidden-info">иконка vk</span>
                                                 <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -810,6 +794,7 @@
                                     <ul class="reviews__soutial-list">
                                         <li class="reviews__social-item">
                                             <a class="reviews__social-link" href="#" title="twitter">
+                                                <span class="hidden-info">иконка twitter</span>
                                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -820,6 +805,7 @@
                                         </li>
                                         <li class="reviews__social-item">
                                             <a class="reviews__social-link" href="#" title="vk">
+                                                <span class="hidden-info">иконка vk</span>
                                                 <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -847,6 +833,7 @@
                                     <ul class="reviews__soutial-list">
                                         <li class="reviews__social-item">
                                             <a class="reviews__social-link" href="#" title="twitter">
+                                                <span class="hidden-info">иконка twitter</span>
                                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -857,6 +844,7 @@
                                         </li>
                                         <li class="reviews__social-item">
                                             <a class="reviews__social-link" href="#" title="vk">
+                                                <span class="hidden-info">иконка vk</span>
                                                 <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -868,7 +856,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div>          
                     </div>
                     <button class="slider__next-btn reviews__slider-next-btn" type="button"></button>
                     <button class="slider__previous-btn reviews__slider-previous-btn" type="button"></button>
@@ -879,15 +867,12 @@
     <footer class="footer">
         <div class="container">
             <a class="logo" href="#">
-                <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M49.7814 40.2838H9.21869C8.82465 40.2838 8.47439 40.0332 8.34674 39.6608L2.28311 21.9753C2.11853 21.4931 2.37489 20.9693 2.8565 20.8037C3.0042 20.7536 3.15823 20.7409 3.30119 20.7662C3.63457 20.7857 3.94526 20.9872 4.08927 21.3143C4.83885 23.0165 7.50537 28.512 10.616 28.512C10.6546 28.512 10.6936 28.511 10.7331 28.5089C12.6095 28.4255 15.544 26.2601 18.8688 16.4233C18.9959 16.0488 19.3467 15.7966 19.7418 15.7966C20.1374 15.7966 20.4882 16.0488 20.6154 16.4233C21.7505 19.7777 25.5554 28.4577 29.5064 28.4577C29.5169 28.4577 29.527 28.4572 29.538 28.4572C31.4112 28.4345 34.2914 26.3324 37.3757 16.4439C37.4964 16.0583 37.8525 15.7966 38.2561 15.7966H38.265C38.6722 15.8009 39.0283 16.0709 39.1412 16.4618C40.0838 19.7081 43.4271 28.2108 47.5279 28.5659C49.9239 28.7631 52.5803 26.0518 55.2031 20.6961C55.4162 20.2588 55.9342 20.062 56.3842 20.2493C56.8331 20.4355 57.0609 20.9387 56.9037 21.3997L50.6539 39.6608C50.5257 40.0337 50.1755 40.2838 49.7814 40.2838ZM9.87702 38.4401H49.122L52.7338 27.887C50.9883 29.7343 49.2159 30.5582 47.3676 30.4031C42.8258 30.008 39.7093 23.4633 38.2603 19.6163C35.7008 26.7607 32.8434 30.2618 29.5591 30.3003C29.5412 30.3003 29.5243 30.3013 29.5064 30.3013C24.9166 30.3013 21.3734 23.265 19.7682 19.3836C17.0294 26.6109 14.0902 30.2043 10.8149 30.3509C9.13588 30.4158 7.67364 29.5792 6.4145 28.338L9.87702 38.4401Z"
-                        fill="#A07B50" stroke="#1F1C1D" stroke-width="0.8" />
-                </svg>
+                <img class="logo__img" src="img/logo.svg" alt="main coon logo image">
             </a>
             <ul class="footer__social-list">
                 <li class="footer__social-item">
                     <a class="footer__social-link" href="#" title="facebook">
+                        <span class="hidden-info">иконка facebook</span>
                         <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1.09903 2.72854C1.09903 3.00311 1.09903 4.22865 1.09903 4.22865H0V6.06299H1.09903V11.514H3.35667V6.06314H4.87165C4.87165 6.06314 5.01353 5.18359 5.08231 4.22189C4.88513 4.22189 3.36521 4.22189 3.36521 4.22189C3.36521 4.22189 3.36521 3.15472 3.36521 2.96767C3.36521 2.78022 3.61136 2.52806 3.85465 2.52806C4.09748 2.52806 4.60999 2.52806 5.08469 2.52806C5.08469 2.27831 5.08469 1.41538 5.08469 0.618408C4.45099 0.618408 3.73004 0.618408 3.41225 0.618408C1.04322 0.618282 1.09903 2.45445 1.09903 2.72854Z"
@@ -897,6 +882,7 @@
                 </li>
                 <li class="footer__social-item">
                     <a class="footer__social-link" href="#" title="twitter">
+                        <span class="hidden-info">иконка twitter</span>
                         <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M13.3758 4.62011C14.2231 4.55022 14.7977 4.16506 15.0189 3.64245C14.7133 3.83019 13.7646 4.03487 13.2407 3.83994C13.215 3.71684 13.1863 3.59991 13.1581 3.49434C12.7589 2.02841 11.392 0.847405 9.9598 0.990077C10.0757 0.943291 10.1932 0.899732 10.3104 0.860627C10.468 0.804161 11.393 0.653668 11.2473 0.327185C11.1246 0.040017 9.99448 0.544209 9.7817 0.610109C10.0626 0.504473 10.5271 0.322766 10.5769 0C10.1466 0.0590258 9.72411 0.262477 9.3977 0.558308C9.51554 0.431453 9.60494 0.276857 9.62391 0.110476C8.47615 0.843722 7.80569 2.322 7.26309 3.75598C6.83704 3.34308 6.45942 3.01793 6.12066 2.83738C5.17032 2.32775 4.03403 1.79603 2.25031 1.13387C2.19557 1.72402 2.54218 2.50872 3.54095 3.03055C3.32456 3.00159 2.92885 3.06622 2.61236 3.14201C2.74125 3.81809 3.16218 4.3751 4.30173 4.64445C3.78095 4.67882 3.51181 4.79733 3.26789 5.05276C3.50508 5.52297 4.08387 6.07637 5.12504 5.96277C3.96746 6.4617 4.65305 7.38567 5.59497 7.24787C3.98812 8.90757 1.45474 8.78559 0 7.39742C3.79824 12.573 12.0547 10.4583 13.2852 5.47317C14.207 5.48102 14.749 5.15384 15.085 4.79312C14.5539 4.88326 13.784 4.79011 13.3758 4.62011Z"
@@ -906,6 +892,7 @@
                 </li>
                 <li class="footer__social-item">
                     <a class="footer__social-link" href="#" title="vk">
+                        <span class="hidden-info">иконка vk</span>
                         <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.8841 7.1355C12.8492 7.0724 12.633 6.56585 11.593 5.52472C10.5041 4.43452 10.6504 4.61154 11.9619 2.72647C12.7606 1.57842 13.08 0.877323 12.98 0.577604C12.8849 0.291906 12.2975 0.367274 12.2975 0.367274L10.3441 0.379543C10.3441 0.379543 10.1994 0.35851 10.0914 0.427744C9.98654 0.496101 9.9191 0.653848 9.9191 0.653848C9.9191 0.653848 9.60951 1.54249 9.19673 2.29792C8.32648 3.89204 7.97789 3.97617 7.83569 3.87714C7.50498 3.64666 7.58786 2.94994 7.58786 2.45567C7.58786 0.910625 7.80482 0.266491 7.16452 0.0999807C6.95163 0.0447692 6.79562 0.00796159 6.25202 0.00182698C5.55484 -0.00606037 4.96411 0.0044561 4.63015 0.180607C4.40751 0.298041 4.23605 0.560076 4.34088 0.574975C4.47007 0.593378 4.76259 0.659983 4.91779 0.887839C5.11849 1.18142 5.11118 1.84221 5.11118 1.84221C5.11118 1.84221 5.22657 3.66068 4.84222 3.88678C4.57814 4.0419 4.21655 3.72553 3.44056 2.27864C3.04322 1.53811 2.74257 0.7187 2.74257 0.7187C2.74257 0.7187 2.68488 0.566211 2.58168 0.484708C2.45655 0.385678 2.28104 0.354129 2.28104 0.354129L0.423525 0.366398C0.423525 0.366398 0.144817 0.375162 0.0424345 0.505741C-0.0485722 0.622299 0.0351215 0.862424 0.0351215 0.862424C0.0351215 0.862424 1.4896 4.53179 3.13585 6.38182C4.6464 8.0776 6.3609 7.9663 6.3609 7.9663H7.13771C7.13771 7.9663 7.37254 7.93825 7.49198 7.79891C7.60249 7.67096 7.59843 7.43083 7.59843 7.43083C7.59843 7.43083 7.58299 6.30645 8.06727 6.14081C8.54425 5.97781 9.15692 7.22752 9.80615 7.70864C10.2969 8.07234 10.6699 7.99259 10.6699 7.99259L12.4063 7.9663C12.4063 7.9663 13.3148 7.90583 12.8841 7.1355Z"
