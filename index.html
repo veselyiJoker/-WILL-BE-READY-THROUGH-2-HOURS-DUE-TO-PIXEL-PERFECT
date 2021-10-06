@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Maine Coon</title>
-</head>
-
-<body>
-    <!-- 
+        <!-- 
         Так как при вёрстке данного шаблона используется BEM, а BEM в будущем подразумевает избавление от вложенности
         cтилей у CSS, то каждому тегу будет присвоен отдельный класс
 
@@ -34,20 +30,22 @@
          на то, чтобы избавиться от багов, зато времени на то, чтобы сделать их еще больше, всегда хватает.
         * Существует всего два способа писать код без багов. Но работает почему-то третий.
      -->
+</head>
+<body>
     <header class="header">
-        <!-- container для выравнивания -->
+        <!-- container будет использоваться дальше для выравнивания всех секций страницы-->
         <div class="container">
             <button class="header__menu-btn"></button>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="#" title="Main page">Главная</a>
+                        <a class="menu__link menu__link--active" href="#" title="Main page link">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#" title="Nursery">Питомник</a>
+                        <a class="menu__link" href="#" title="Nursery link">Питомник</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#" title="Contacts">Контакты</a>
+                        <a class="menu__link" href="#" title="Contacts link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -59,7 +57,7 @@
     <main class="main">
         <section class="home">
             <div class="container">
-                <div class="home__inner">
+                <div class="home__content">
                     <p class="home__location">Новосибирск</p>
                     <h1 class="home__title">Питомник Мейн-Кунов</h1>
                     <p class="home__description">
@@ -91,6 +89,7 @@
         </section>
         <section class="pets">
             <div class="container">
+                <!-- title-block будет использоваться для заголовков секций и далее -->
                 <div class="title-block">
                     <h2 class="title-block__title">Питомцы</h2>
                     <p class="title-block__description">
@@ -169,7 +168,7 @@
                     </li>
                 </ul>
             </div>
-            <form class="contact-form visualy-hidden" action="#">
+            <form class="contact-form visualy-hidden" action="#" method="post" enctype="multipart/form-data">
                 <button class="contact-form__exit-btn"></button>
                 <h3 class="contact-form__title">Заказать звонок</h3>
                 <p class="contact-form__description">Отвечаем и звоним каждый день, с 10:00 ДО 24:00</p>
@@ -207,7 +206,7 @@
                             Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и
                             послушной
                         </p>
-                        <a class="how-to-care__link" href="#" title="how to care for Main-Coon hair">></a>
+                        <a class="how-to-care_item-link" href="#" title="how to care for Main-Coon hair">></a>
                     </li>
                     <li>
                         <h3 class="how-to-care__item-title">Когти</h3>
@@ -215,7 +214,7 @@
                             Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную
                             когтеточку
                         </p>
-                        <a class="how-to-care__link" href="#" title="how to care for a Main-Coon claws">></a>
+                        <a class="how-to-care__item-link" href="#" title="how to care for a Main-Coon claws">></a>
                     </li>
                     <li>
                         <h3 class="how-to-care__item-title">Уши и глаза</h3>
@@ -223,7 +222,7 @@
                             Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может
                             быть признаками заболевания
                         </p>
-                        <a class="how-to-care__link" href="#" title="how to care for Main-Coon ears and eyes">></a>
+                        <a class="how-to-care__item-link" href="#" title="how to care for Main-Coon ears and eyes">></a>
                     </li>
                     <li>
                         <h3 class="how-to-care__item-title">Питание</h3>
@@ -231,7 +230,7 @@
                             В нашем питомнике существует два подхода: натуральное питание и питание промышленными
                             кормами, но выбирать только вам
                         </p>
-                        <a class="how-to-care__link" href="#" title="how to feed Main-Coon">></a>
+                        <a class="how-to-care__item-link" href="#" title="how to feed Main-Coon">></a>
                     </li>
                 </ul>
             </div>
@@ -240,9 +239,10 @@
             <div class="container">
                 <div class="title-block">
                     <h2 class="title-block__title">Наша команда</h2>
-                    <p class="title-block__description">Все сотрудники нашего питомника дипломированые специалисты в
-                        области
-                        фелинологии и ветеринарии</p>
+                    <p class="title-block__description">
+                        Все сотрудники нашего питомника дипломированые специалисты в
+                        областифелинологии и ветеринарии
+                    </p>
                 </div>
                 <div class="slider team__slider">
                     <div class="slider__items-wrapper team__slider-items-wrapper">
@@ -390,6 +390,7 @@
                             </div>
                         </li>
                     </ul>
+                    <!-- на шаблоне не ясно как и где задать вопросы по этому предпологаю модальное окно и btn -->
                     <button class="questions__ask-btn">Задать вопрос</button>
                 </div>
             </div>
