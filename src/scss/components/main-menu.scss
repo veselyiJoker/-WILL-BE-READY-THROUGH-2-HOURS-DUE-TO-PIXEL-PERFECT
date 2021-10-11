@@ -1,0 +1,48 @@
+.main-menu {
+  margin-right: 60px;
+}
+
+.main-menu__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-menu__item {
+  margin-right: 51px;
+}
+
+.main-menu__link {
+  font-family: $roboto-ff;
+  font-size: 17.9px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.2;
+  transition: 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.main-menu__link--active{
+  opacity: 1;
+}
+
+@media (max-width: 1280px) {
+  .main-menu {
+    margin-right: 10px;
+  }
+
+  .main-menu__item {
+    margin-right: 35px;
+  }
+
+  .main-menu__link {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+}

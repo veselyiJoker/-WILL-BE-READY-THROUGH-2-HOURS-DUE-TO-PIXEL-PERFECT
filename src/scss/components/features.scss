@@ -1,0 +1,131 @@
+.features {
+  padding-top: 64px;
+  padding-bottom: 141px;
+  background: $features-background;
+}
+
+.features__title-block{
+  margin-left: 22px;
+}
+
+.features__title-block-description {
+  width: 735px;
+  margin: auto auto 17px auto;
+  padding-right: 24px;
+}
+
+.features__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.features__maine-coon-wrapper {
+  position: relative;
+  margin-top: 12px;
+  margin-left: 84px;
+  z-index: 2;
+}
+
+.features__maine-coon-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 102%;
+  height: 101%;
+  top: 4.45%;
+  left: -5%;
+  border: 1px solid $brown-color;
+  border-radius: 9999px;
+  z-index: -1;
+}
+
+.features__maine-coon-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 4%;
+  width: 83.2%;
+  top: 13.2%;
+  height: 83.2%;
+  border-radius: 9999px;
+  background: $main-coon-circle-background;
+  z-index: -1;
+}
+
+.features__list {
+  font-size: 0px;
+  list-style: none;
+}
+
+.features__item {
+  position: absolute;
+  font-family: $roboto-ff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.features__item:nth-child(1) {
+  font-size: 14px;
+  top: 25.9%;
+  left: -39.5%;
+  text-align: right;
+  width: 233px;
+}
+
+.features__item:nth-child(1)::after {
+  @extend %features-item-dot;
+  top: 7px;
+  right: -37px;
+}
+
+.features__item:nth-child(2)::after {
+  @extend %features-item-dot;
+  top: 7px;
+  right: -32px;
+}
+
+.features__item:nth-child(3)::after {
+  @extend %features-item-dot;
+  top: 3px;
+  left: -34px;
+}
+
+.features__item:nth-child(4)::after {
+  @extend %features-item-dot;
+  top: 6px;
+  left: -33px;
+}
+
+.features__item:nth-child(2) {
+  top: 71.7%;
+  left: -34.9%;
+  line-height: 23px;
+  text-align: right;
+  width: 186px;
+}
+
+.features__item:nth-child(3) {
+  line-height: 23px;
+  right: -29.7%;
+  top: 43.5%;
+  width: 183px;
+}
+
+.features__item:nth-child(4) {
+  line-height: 23px;
+  bottom: 14%;
+  right: -19.6%;
+  width: 157px;
+}
+
+@media (max-width: 1280px) {
+  .features {
+    padding-top: 73px;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+}

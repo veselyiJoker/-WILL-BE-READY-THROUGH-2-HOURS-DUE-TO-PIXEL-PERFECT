@@ -1,0 +1,127 @@
+.home {
+  position: relative;
+  font-family: $roboto-ff;
+}
+
+.home__content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 684px;
+  margin-left: 123px;
+}
+
+.home__content {
+  position: relative;
+}
+
+.home__location {
+  color: $brown-color;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.home__title {
+  font-family: $yeseva-one-ff;
+  font-size: 52px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+}
+
+.home__description {
+  color: $brown-color;
+  line-height: 24px;
+  margin-top: 17px;
+  margin-bottom: 48px;
+}
+
+.home__nursery-link {
+  @extend %usual-btn;
+  margin-left: 1px;
+  margin-bottom: 10px;
+}
+
+.home__social-list {
+  position: absolute;
+  bottom: -105px;
+  left: -130px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.home__social-list::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  height: 77px;
+  width: 2px;
+  background: #fff;
+  opacity: 0.15;
+}
+
+.home__social-item {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__social-link:hover .home__social-icon{
+  fill: $brown-color;
+}
+
+.home__social-icon {
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.home__maine-coon {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  font-size: 0px;
+}
+
+@media (max-width: 1280px) {
+  .home__content-wrapper {
+    height: 596px;
+    margin-left: 42px;
+  }
+
+  .home__location {
+    margin-top: 50px;
+    margin-bottom: 17px;
+  }
+
+  .home__description {
+    margin-top: 20px;
+    margin-bottom: 49px;
+  }
+
+  .home__nursery-link {
+    margin-bottom: 20px;
+  }
+
+  .home__social-list {
+    display: flex;
+    bottom: -60px;
+    left: -8px;
+    &::before {
+      display: none;
+    }
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .home {
+    
+  }
+}

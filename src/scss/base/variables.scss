@@ -1,0 +1,80 @@
+$mobile-width: 320px;
+$tablet-width: 767px;
+$desktop-width: 1280px;
+$large-width: 1366px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$roboto-ff: 'Roboto', 'Arial', sans-serif;
+$yeseva-one-ff: 'Yeseva One', 'Arial', sans-serif;
+
+$body-background: #181617;
+$usual-text: #fff;
+$brown-color: #a07b50;
+$pets-background: #1F1C1D;
+$features-background: #1F1C1D;
+$main-coon-circle-background: #151313;
+$advantages-item-background: #1F1C1D;
+$how-to-care-item-hover: #151313;
+$brown-border: rgba(160, 123, 80, 0.5);
+$dark-brown-border: rgba(160, 123, 80, 0.2);
+$team-text-content-background: #1F1C1D;
+$questions-background: #1F1C1D;
+$questions-color: #DDD0C3;
+$reviews-background: #1F1C1D;
+$reviews-text-content-background: #151313;
+$footer-background: #151313;
+$footer-color: #FDF2E6;
+
+%usual-btn {
+    font-family: $roboto-ff;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    display: block;
+    width: 200px;
+    font-size: 13.2px;
+    line-height: 50px;
+    text-align: center;
+    color: $usual-text;
+    border: 1px solid $brown-border;
+    transition: 0.3s;
+    &:hover {
+        background: $brown-color;
+        color: $usual-text;
+        animation: pulsation-small 0.65s;
+    }
+}
+
+%features-item-dot {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: $brown-color;
+    border-radius: 99px;
+}
+
+
+@keyframes pulsation-small {
+    25% {
+      transform: scaleX(1.08) scaleY(0.9);
+    }
+    30% {
+      transform: scaleX(0.9) scaleY(1.05);
+    }
+    40% {
+      transform: scaleX(1.05) scaleY(0.9);
+    }
+    50% {
+      transform: scaleX(0.9) scaleY(1.05);
+    }
+    70% {
+      transform: scaleX(1.025) scaleY(0.95);
+    }
+    80% {
+      transform: scaleX(0.95) scaleY(1.025);
+    }
+    100% {
+      transform: none;
+    }
+  }

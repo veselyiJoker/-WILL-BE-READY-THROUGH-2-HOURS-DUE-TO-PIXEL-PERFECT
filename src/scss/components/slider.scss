@@ -1,0 +1,27 @@
+.slider {
+  position: relative;
+}
+
+.slider__next-btn {
+  position: absolute;
+  right: 0px;
+  top: calc(50% - 6px);
+  &:hover .slider__btn-icon{
+    stroke: #fff;
+  }
+}
+
+.slider__previous-btn {
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 6px);
+  &:hover .slider__btn-icon{
+    stroke: #fff;
+  }
+}
+
+.slider__btn-icon {
+  fill: none;
+  stroke: #A07B50;
+  transition: 0.3s;
+}

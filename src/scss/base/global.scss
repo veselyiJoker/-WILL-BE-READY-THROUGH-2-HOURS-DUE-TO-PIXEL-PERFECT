@@ -1,0 +1,85 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1F1C1D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(176,117,50,1) 16%, rgba(139,110,76,1) 43%, rgba(97,97,97,1) 88%, rgba(97,97,97,1) 100%);
+  border-radius: 999px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  min-width: $mobile-width;
+  margin: 0;
+  padding: 0;
+  font-family: $roboto-ff;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: $body-background;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: block;
+  font-family: $roboto-ff;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.hidden-info {
+  font-size: 0px;
+}
+
+.container {
+  position: relative;
+  max-width: 1286px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: $desktop-width) {
+  .container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+

@@ -1,0 +1,73 @@
+.how-to-care {
+    padding-top: 66px;
+    padding-bottom: 55px;
+    background: url(../img/how-to-care.png);
+    background-size: cover;
+    background-position:center;
+}
+
+.how-to-care__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1159px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 9px 0 0 24px;
+}
+
+.how-to-care__item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 559px;
+    height: 165px;
+    overflow: hidden;
+    border: 1px solid $brown-border;
+    margin-bottom: 43px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        background: $how-to-care-item-hover;
+        .how-to-care__item-link {
+            background: $how-to-care-item-hover;
+        }
+    }
+}
+
+.how-to-care__item-content {
+    padding: 15px 0 0 58px;
+}
+
+.how-to-care__item-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: $brown-color;
+    margin-bottom: 0px;
+}
+
+.how-to-care__item-description {
+    line-height: 24px;
+    font-size: 14px;
+    padding: 0px;
+    margin-top: 9px;
+    max-width: 389px;
+    font-weight: 300;
+}
+
+.how-to-care__item-link {
+    font-size: 0px;
+    margin: 0px;
+    padding: 0 0px 1px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 59px;
+    background: $brown-color;
+    border-left: 1px solid $brown-border;
+    transition: 0.3s;
+}
+
+.how-to-care__arrow{
+    fill: none;
+}
