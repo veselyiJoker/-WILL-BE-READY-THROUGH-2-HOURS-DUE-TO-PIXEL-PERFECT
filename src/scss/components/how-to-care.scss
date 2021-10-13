@@ -43,6 +43,11 @@
     padding: 0;
   }
 }
+@media (max-width: $tablet-width) {
+  .how-to-care {
+    display: none;
+  }
+}
 
 .how-to-care__item {
   box-sizing: border-box;

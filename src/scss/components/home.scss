@@ -7,34 +7,58 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 89vh;
-  min-height: 684px;
+  height: 77vh;
+  min-height: 593px;
   margin-left: 123px;
 }
-
 @media (max-width: $desktop-width) {
   .home__content-wrapper {
-    min-height: 596px;
-    max-height: 596px;
+    min-height: 522px;
+    height: 522px;
     margin-left: 42px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .home__content-wrapper {
+    display: block;
+    min-height: 514px;
+    height: 514px;
+    margin: auto;
+    text-align: center;
   }
 }
 
 .home__content {
   position: relative;
+  margin-top: -107px;
+}
+@media (max-width: $desktop-width) {
+  .home__content {
+    margin-top: -74px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .home__content {
+    margin: 0 0 0 0;
+  }
 }
 
 .home__location {
   color: $home-location-color;
-  margin-top: 24px;
+  margin-top: 38px;
   margin-bottom: 15px;
   padding-bottom: 5px;
 }
-
 @media (max-width: $desktop-width) {
   .home__location {
     margin-top: 50px;
     margin-bottom: 16px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .home__location {
+    font-size: 14px;
+    margin: 38px 0 0 0;
   }
 }
 
@@ -44,10 +68,16 @@
   margin: 0;
   line-height: 60px;
 }
-
 @media (max-width: $desktop-width) {
   .home__title {
     margin-left: -1px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .home__title {
+    font-size: 36px;
+    margin-top: 3px;
+    line-height: 41px;
   }
 }
 
@@ -57,12 +87,20 @@
   margin-top: 17px;
   margin-bottom: 48px;
 }
-
 @media (max-width: $desktop-width) {
   .home__description {
     color: $home-description-color;
     margin-top: 20px;
     margin-bottom: 49px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .home__description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 17px;
+    margin-bottom: 34px;
+    margin-left: -2px;
   }
 }
 
@@ -74,10 +112,18 @@
     fill: $home-social-icon-hover-bkg;
   }
 }
-
 @media (max-width: $desktop-width) {
   .home__nursery-link {
     margin-bottom: 21px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .home__nursery-link {
+    width: 141px;
+    height: 40px;
+    line-height: 38px;
+    margin: auto;
+    font-size: 12px;
   }
 }
 
@@ -98,7 +144,6 @@
     background: $home-social-line-bkg;
   }
 }
-
 @media (max-width: $desktop-width) {
   .home__social-list {
     display: flex;
@@ -107,6 +152,11 @@
     &::before {
       display: none;
     }
+  }
+}
+@media (max-width: $tablet-width) {
+  .home__social-list {
+    display: none;
   }
 }
 

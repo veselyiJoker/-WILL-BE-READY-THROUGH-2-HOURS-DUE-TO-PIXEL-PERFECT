@@ -3,27 +3,40 @@
   padding-bottom: 141px;
   background: $features-bkg;
 }
-
 @media (max-width: $desktop-width) {
   .features {
     padding-top: 74px;
     padding-bottom: 115px;
   }
 }
+@media (max-width: $tablet-width) {
+  .features {
+    padding-top: 37px;
+    padding-bottom: 24px;
+  }
+}
 
 .features__title-block{
-  margin-left: 22px;
   margin-top: -1px;
 }
 
 .features__title-block-title {
   margin-bottom: 20px;
+  padding-left: 24px;
 }
-
 @media (max-width: $desktop-width) {
   .features__title-block-title {
+    padding-left: 21px;
     margin-left: -26px;
     margin-bottom: 22px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .features__title-block-title {
+    font-size: 28px;
+    width: 220px;
+    margin: 0 auto 23px auto;
+    padding: 0;
   }
 }
 
@@ -32,17 +45,26 @@
   width: 100%;
   max-width: 735px;
   margin: auto auto 17px auto;
-  padding-right: 24px;
+  padding-right: 3px;
 }
 @media (max-width: $desktop-width) {
   .features__title-block-description {
     box-sizing: content-box;
-    width: 470px;
-    padding-right: 29px;
+    max-width: 470px;
+    padding-right: 7px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .features__title-block-description {
+    font-size: 14px;
+    padding-right: 0px;
+    max-width: 280px;
+    line-height: 20px;
   }
 }
 
 .features__content {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +76,21 @@
   margin-top: 10px;
   margin-left: 84px;
   z-index: 2;
+}
+@media (max-width: $desktop-width) {
+  .features__maine-coon-wrapper {
+    margin-top: 13px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .features__maine-coon-wrapper {
+    margin-top: -2px;
+    margin-left: 0px;
+  }
+}
+
+.features__main-coon-img-container {
   &::before {
     content: '';
     position: absolute;
@@ -78,9 +115,7 @@
   }
 }
 @media (max-width: $desktop-width) {
-  .features__maine-coon-wrapper {
-    margin-top: 13px;
-    margin-left: 40px;
+  .features__main-coon-img-container {
     &::before {
       width: 416px;
       height: 424px;
@@ -95,32 +130,59 @@
     }
   }
 }
+@media (max-width: $tablet-width) {
+  .features__main-coon-img-container {
+    text-align: center;
+    padding-left: 9px;
+    &::before{
+      width: 280px;
+      height: 280px;
+      top: 11px;
+      left: -6px;
+    }
+    &::after {
+      width: 230px;
+      height: 230px;
+      top: 36px;
+      left: 19px;
+    }
+  }
+}
+
 .features__list {
   font-size: 0px;
   list-style: none;
 }
-
-%features-item-dot {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: $features-item-dot-bkg;
-  border-radius: 99px;
+@media (max-width: $tablet-width) {
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 47px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 7px;
+  } 
 }
 
 .features__item {
   position: absolute;
   font: $feature-item-font;
   line-height: 21px;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: $features-item-dot-bkg;
+    border-radius: 99px
+  }
   &:nth-child(1) {
     font-size: 14px;
     top: 25.6%;
     left: -39.7%;
     text-align: right;
     width: 233px;
-    &:nth-child(1)::after {
-      @extend %features-item-dot;
+    &::after {
       top: 7px;
       right: -37px;
     }
@@ -131,8 +193,7 @@
     line-height: 23px;
     text-align: right;
     width: 186px;
-    &:nth-child(2)::after {
-      @extend %features-item-dot;
+    &::after {
       top: 7px;
       right: -32px;
     }
@@ -142,8 +203,7 @@
     right: -29.8%;
     top: 43.1%;
     width: 183px;
-    &:nth-child(3)::after {
-      @extend %features-item-dot;
+    &::after {
       top: 3px;
       left: -34px;
     }
@@ -153,23 +213,23 @@
     bottom: 14.3%;
     right: -19.6%;
     width: 157px;
-    &:nth-child(4)::after {
-      @extend %features-item-dot;
+    &::after {
       top: 6px;
       left: -33px;
     }
   }
 }
-
 @media (max-width: $desktop-width) {
   .features__item {
+    &::after {
+      width: 10px;
+      height: 10px;
+    }
     &:nth-child(1) {
       top: 27.6%;
       left: -39.7%;
       width: 154px;
-      &:nth-child(1)::after {
-        width: 10px;
-        height: 10px;
+      &::after {
         top: 5px;
         right: -25px;
       }
@@ -178,9 +238,7 @@
       top: 71.9%;
       left: -37.9%;
       width: 135px;
-      &:nth-child(2)::after {
-        width: 10px;
-        height: 10px;
+      &::after {
         top: 5px;
         right: -21px;
       }
@@ -190,9 +248,7 @@
       right: -29.8%;
       top: 44.4%;
       width: 123px;
-      &:nth-child(3)::after {
-        width: 10px;
-        height: 10px;
+      &::after {
         top: 4px;
         left: -21px;
       }
@@ -201,10 +257,66 @@
       bottom: 5.5%;
       right: -20.7%;
       width: 110px;
-      &:nth-child(4)::after {
-        width: 10px;
-        height: 10px;
+      &::after {
         left: -22px;
+      }
+    }
+  }
+}
+@media (max-width: $tablet-width) {
+  .features__item {
+    position: relative;
+    font-size: 13.5px;
+    &::after {
+      width: 8px;
+      height: 8px;
+    }
+    &:nth-child(n){
+      left: 0;
+      padding: 0;
+      margin: 0 0 17px 0;
+      width: auto;
+      text-align: left;
+    }
+    &:nth-child(1) {
+      order: 1;
+      max-width: 250px;
+      &::after {
+        top: 5px;
+        left: -18px;
+      }
+    }
+    &:nth-child(2) {
+      line-height: 20px;
+      max-width: 180px;
+      order: 4;
+      letter-spacing: 0.3px;
+      margin-top: 1px;
+      &::after {
+        top: 5px;
+        left: -18px;
+      }
+    }
+    &:nth-child(3) {
+      max-width: 250px;
+      order: 2;
+      line-height: 20px;
+      margin-top: 1px;
+      margin-left: 1px;
+      letter-spacing: 0.25px;
+      &::after {
+        top: 5px;
+        left: -19px;
+      }
+    }
+    &:nth-child(4) {
+      max-width: 260px;
+      order: 3;
+      letter-spacing: 0.25px;
+      margin-top: 1px;
+      &::after {
+        top: 7px;
+        left: -18px;
       }
     }
   }

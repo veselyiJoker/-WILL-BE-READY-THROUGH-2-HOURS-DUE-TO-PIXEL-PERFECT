@@ -76,7 +76,11 @@
         <div class="container">
             <div class="header__container">
                 <nav class="main-menu">
-                    <button class="main-menu-btn" type="button"></button>
+                    <button class="main-menu__btn" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="main-menu__list">
                         <li class="main-menu__item">
                             <a class="main-menu__link main-menu__link--active" href="#" title="Ссылка на главную страницу">Главная</a>
@@ -89,8 +93,8 @@
                         </li>
                     </ul>
                 </nav>
-                <a class="logo" href="#" title="Ссылка на главную страницу">
-                    <img class="logo__img" width="59" height="59" src="img/logo.svg" alt="main coon logo image">
+                <a class="logo main-menu__logo" href="#" title="Ссылка на главную страницу">
+                    <img class="logo__img main-menu__logo-img" width="59" height="59" src="img/logo.svg" alt="main coon logo image">
                 </a>
             </div>
         </div>
@@ -143,7 +147,7 @@
             </div>
             <picture class="home__maine-coon">
                 <source srcset="img/home-maine-coon-mobile@1x.png 1x, img/home-maine-coon-mobile@2x.png 2x" type="image/png" media="(max-width:767px)">
-                <source srcset="img/home-maine-coon-tablet@1x.png 1x, img/home-maine-coon-tablet@2x.png 2x" type="image/png" media="(max-width:1024px)">
+                <source srcset="img/home-maine-coon-tablet@1x.png 1x, img/home-maine-coon-tablet@2x.png 2x" type="image/png" media="(max-width:1100px)">
                 <source srcset="img/home-maine-coon-desktop@1x.png 1x, img/home-maine-coon-desktop@2x.png 2x" type="image/png">
                 <img src="img/home-maine-coon-desktop@1x.png" alt="Рыжий мейн кун">
             </picture>
@@ -154,7 +158,7 @@
                 <div class="title-block pets__title-block">
                     <h2 class="title-block__title pets__title-block-title">Питомцы</h2>
                     <p class="title-block__description pets__title-block-description">
-                        Все представители нашего питомника имеют ветеринарный паспорт <br>
+                        Все представители нашего питомника имеют ветеринарный паспорт
                         с отметками о прививках и документ с родословной
                     </p>
                 </div>
@@ -204,12 +208,12 @@
                             </div>
                         </div>
                         <button class="slider__next-btn pets__slider-next-btn" type="button">
-                            <svg class="slider__btn-icon" width="15" height="35">
+                            <svg class="slider__btn-icon pets__slider-btn-icon" width="15" height="35">
                                 <use xlink:href="#slider-arrow-right"></use>
                             </svg>
                         </button>
                         <button class="slider__previous-btn pets__slider-previous-btn" type="button">
-                            <svg class="slider__btn-icon" width="15" height="35">
+                            <svg class="slider__btn-icon pets__slider-btn-icon" width="15" height="35">
                                 <use xlink:href="#slider-arrow-left"></use>
                             </svg>
                         </button>
@@ -229,12 +233,14 @@
                 </div>
                 <div class="features__content">
                     <div class="features__maine-coon-wrapper">
-                        <picture class="features__main-coon-img">
-                            <source srcset="img/features-maine-coon-mobile@1x.png 1x, img/features-maine-coon-mobile@2x.png 2x" type="image/png" media="(max-width:425px)">
-                            <source srcset="img/features-maine-coon-tablet@1x.png 1x, img/features-maine-coon-tablet@2x.png 2x" type="image/png" media="(max-width:1365px)">
-                            <source srcset="img/features-maine-coon-desktop@1x.png 1x, img/features-maine-coon-desktop@2x.png 2x" type="image/png">
-                            <img src="img/features-maine-coon-desktop@1x.png" alt="рыжий Мейн-Кун во весь рост">
-                        </picture>
+                        <div class="features__main-coon-img-container">
+                            <picture class="features__main-coon-img">
+                                <source srcset="img/features-maine-coon-mobile@1x.png 1x, img/features-maine-coon-mobile@2x.png 2x" type="image/png" media="(max-width:767px)">
+                                <source srcset="img/features-maine-coon-tablet@1x.png 1x, img/features-maine-coon-tablet@2x.png 2x" type="image/png" media="(max-width:1365px)">
+                                <source srcset="img/features-maine-coon-desktop@1x.png 1x, img/features-maine-coon-desktop@2x.png 2x" type="image/png">
+                                <img src="img/features-maine-coon-desktop@1x.png" alt="рыжий Мейн-Кун во весь рост">
+                            </picture>
+                        </div>
                         <ul class="features__list">
                             <li class="features__item">Легко уживается в семьях с детьми или другими животными</li>
                             <li class="features__item">Внешний вид этой кошки похож на дикую рысь</li>
@@ -255,7 +261,7 @@
                     <li class="advantages__item">
                         <div class="advantages__item-layout">
                             <span class="hidden-info">Иконка бесплатного ветеринарного обслуживания</span>
-                            <svg class="advantages__icon" width="98" height="107">
+                            <svg class="advantages__icon advantages__veterinary-service-icon" width="98" height="107">
                                 <use xlink:href="#veterinary-service-icon"></use>
                             </svg>
                             <p class="advantages__text">Бесплатное ветеринарное <br> обслуживание 5 лет</p>
@@ -264,7 +270,7 @@
                     <li class="advantages__item">
                         <div class="advantages__item-layout">
                             <span class="hidden-info">Иконка работы 24 часа в сутки</span>
-                            <svg class="advantages__icon" width="107" height="95">
+                            <svg class="advantages__icon advantages__all-day-work-icon" width="107" height="95">
                                 <use xlink:href="#all-day-work-icon"></use>
                             </svg>                            
                             <p class="advantages__text">Консультирование по любому <br> вопросу 24 часа в сутки</p>
@@ -273,7 +279,7 @@
                     <li class="advantages__item">
                         <div class="advantages__item-layout">
                             <span class="hidden-info">Иконка корма для кота</span>
-                            <svg class="advantages__icon" width="70" height="108">
+                            <svg class="advantages__icon advantages__cat-food-icon" width="70" height="108">
                                 <use xlink:href="#cat-food-icon"></use>
                             </svg>                            
                             <p class="advantages__text">Индивидуальный подбор <br> питания для вашего кота</p>

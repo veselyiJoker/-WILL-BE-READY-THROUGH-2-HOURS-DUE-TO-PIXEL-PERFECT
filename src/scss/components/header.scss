@@ -1,6 +1,4 @@
 .header {
-  position: absolute;
-  top: 0;
   width: 100%;
   padding-top: 38px;
   z-index: 2;
@@ -12,14 +10,27 @@
     padding-top: 22px;
   }
 }
+@media (max-width: $tablet-width) {
+
+}
 
 .header__container {
   display: flex;
   margin-left: 124px;
 }
-
 @media (max-width: $desktop-width) {
   .header__container {
     margin-left: 40px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .header__container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header__container {
+    margin: 0;
   }
 }

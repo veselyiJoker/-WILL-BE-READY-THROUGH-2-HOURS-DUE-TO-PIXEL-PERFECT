@@ -12,6 +12,11 @@
     letter-spacing: 0.45px;
   }
 }
+@media (max-width: $tablet-width) {
+  .footer {
+    display: none;
+  }
+}
 
 .footer__container {
   display: flex;

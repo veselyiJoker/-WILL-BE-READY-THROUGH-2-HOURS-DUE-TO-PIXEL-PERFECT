@@ -9,6 +9,11 @@
     padding-bottom: 47px;
   }
 }
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding-top: 36px;
+  }
+}
 
 .advantages__title-block {
   padding-bottom: 20px;  
@@ -16,6 +21,11 @@
 @media (max-width: $desktop-width) {
   .advantages__title-block {
     padding-bottom: 32px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .advantages__title-block {
+    padding-bottom: 23px;
   }
 }
 
@@ -28,6 +38,13 @@
     margin-top: 21px;
   }
 }
+@media (max-width: $tablet-width) {
+  .advantages__title-block-title {
+    max-width: 190px;
+    margin: auto;
+    font-size: 28px;
+  }
+}
 
 .advantages__title-block-description {
   margin-left: 2px;
@@ -37,6 +54,17 @@
 @media (max-width: $desktop-width) {
   .advantages__title-block-description {
     margin-left: -1px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .advantages__title-block-description {
+    font-size: 14px;
+    letter-spacing: 0px;
+    width: 305px;
+    margin: auto;
+    line-height: 20px;
+    padding-top: 23px;
+    padding-left: 0px;
   }
 }
 
@@ -78,14 +106,44 @@
 @media (max-width: $desktop-width) {
   .advantages__item {
     height: 306px;
-    margin-bottom: 43px;
     margin-right: 11px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .advantages__item {
+    width: 290px;
+    height: 248px;
+    margin-bottom: 30px;
+    margin-right: 11px;
+    border: 22px solid $advantages-item-bkg;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__veterinary-service-icon {
+    width: 80px;
+    height: 88px;
+  }
+  .advantages__all-day-work-icon {
+    margin-top: 8px;
+    width: 80px;
+    height: 71px;
+  }
+  .advantages__cat-food-icon {
+    width: 57px;
+    height: 88px;
   }
 }
 
 .advantages__item-layout {
   text-align: center;
   margin-top: 52px;
+}
+@media (max-width: $tablet-width) {
+  .advantages__item-layout {
+    margin-top: 34px;
+    margin-left: 9px;
+  }
 }
 
 .advantages__text{
@@ -95,5 +153,13 @@
 @media (max-width: $desktop-width) {
   .advantages__text {
     margin-top: 33px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .advantages__text {
+    margin-top: 11px;
+    margin-left: 3px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }

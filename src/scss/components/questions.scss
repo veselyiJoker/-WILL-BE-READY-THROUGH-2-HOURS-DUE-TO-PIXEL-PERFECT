@@ -8,6 +8,11 @@
     padding-top: 119px;
   }
 }
+@media (max-width: $tablet-width) {
+  .questions {
+    display: none;
+  }
+}
 
 .questions__title-block {
   padding-top: 18px;
