@@ -1,0 +1,25 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 38px;
+  z-index: 2;
+  background: $header-bkg;
+} 
+
+@media (max-width: $desktop-width) {
+  .header {
+    padding-top: 22px;
+  }
+}
+
+.header__container {
+  display: flex;
+  margin-left: 124px;
+}
+
+@media (max-width: $desktop-width) {
+  .header__container {
+    margin-left: 40px;
+  }
+}

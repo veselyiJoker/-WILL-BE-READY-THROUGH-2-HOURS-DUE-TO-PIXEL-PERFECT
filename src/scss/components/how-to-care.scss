@@ -1,0 +1,124 @@
+.how-to-care {
+  padding-top: 67px;
+  padding-bottom: 40px;
+  background: $how-to-care-bkg;
+  background-size: cover;
+  background-position:center;
+}
+@media (max-width: $desktop-width) {
+  .how-to-care {
+    padding-top: 71px;
+    padding-bottom: 59px;
+  }
+}
+
+.how-to-care__title-block {
+  margin-top: 1px;
+}
+@media (max-width: $desktop-width) {
+  .how-to-care__title-block {
+    padding-bottom: 11px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .how-to-care__title-block-title {
+    margin-left: -3px;
+  }
+}
+
+
+.how-to-care__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 0 24px 0 25px;
+}
+@media (max-width: $desktop-width) {
+  .how-to-care__list {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.how-to-care__item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 558px;
+  min-height: 165px;
+  border: 1px solid $how-to-care-item-border-color;
+  margin-bottom: 43px;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: $how-to-care-item-hover;
+    .how-to-care__item-link {
+        background: $how-to-care-item-hover;
+    }
+  }
+}
+@media (max-width: $desktop-width) {
+  .how-to-care__item {
+    margin-left: 16px;
+    min-height: 168px;
+    margin-bottom: 24px;
+    &:nth-child(1){
+      order: 1;
+    }
+    &:nth-child(2){
+      order: 3;
+    }
+    &:nth-child(3){
+      order: 2;
+    }
+    &:nth-child(4){
+      order: 4;
+    }
+  }
+}
+
+.how-to-care__item-content {
+  padding: 14px 0 0 58px;
+}
+@media (max-width: $desktop-width) {
+  .how-to-care__item-content {
+    padding: 16px 0 0 48px;
+  }
+}
+
+.how-to-care__item-title {
+  font: $how-to-care-item-title-font;
+  color: $how-to-care-item-title-color;
+  margin-bottom: 0px;
+}
+
+.how-to-care__item-description {
+  font: $how-to-care-item-description-font;
+  line-height: 23px;
+  padding: 0px;
+  margin-top: 9px;
+  max-width: 389px;
+  text-overflow: initial;
+  overflow: hidden;
+}
+
+.how-to-care__item-link {
+  margin: 0px;
+  padding: 0 0px 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 59px;
+  background: $how-to-care-item-link-bkg;
+  border-left: 1px solid $how-to-care-item-border-color;
+  transition: 0.3s;
+}
+
+.how-to-care__arrow{
+  fill: none;
+}
+

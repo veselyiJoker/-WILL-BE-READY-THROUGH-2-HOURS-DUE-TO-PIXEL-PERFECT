@@ -1,0 +1,23 @@
+@keyframes pulsation-small {
+  25% {
+      transform: scaleX(1.08) scaleY(0.9);
+  }
+  30% {
+      transform: scaleX(0.9) scaleY(1.05);
+  }
+  40% {
+      transform: scaleX(1.05) scaleY(0.9);
+  }
+  50% {
+      transform: scaleX(0.9) scaleY(1.05);
+  }
+  70% {
+      transform: scaleX(1.025) scaleY(0.95);
+  }
+  80% {
+      transform: scaleX(0.95) scaleY(1.025);
+  }
+  100% {
+      transform: none;
+  }
+}
