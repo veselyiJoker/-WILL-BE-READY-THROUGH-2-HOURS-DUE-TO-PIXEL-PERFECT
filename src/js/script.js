@@ -11,11 +11,6 @@ const answersPreviewBtns = document.querySelectorAll('.answers__preview-btn');
 mainMenuBtn.classList.remove('header__menu-btn--locked');
 header.classList.remove('header--locked');
 
-
-
-
-
-
 answersPreview.forEach(elem => {
     elem.addEventListener('click', ()=> onAnswersPreviewBtnClick(elem));
 });

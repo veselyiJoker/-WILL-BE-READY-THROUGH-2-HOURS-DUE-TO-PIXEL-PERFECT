@@ -183,7 +183,7 @@
                     </li>
                 </ul>
                 <div class="pets__sliders-container">
-                    <div class="slider pets__slider swiper" data-slider-id="1">
+                    <div class="slider pets__slider pets__slider-1 swiper" data-slider-id="1">
                         <div class="slider__items-wrapper pets__slider-items-wrapper swiper-wrapper">
                             <div class="slider__item pets__slider-item swiper-slide">
                                 <a class="pets__slider-item-link" href="#" title="Бурый Мейн-кун">
@@ -236,7 +236,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="slider pets__slider swiper" data-slider-id="2">
+                    <div class="slider pets__slider pets__slider-2 swiper" data-slider-id="2">
                         <div class="slider__items-wrapper pets__slider-items-wrapper swiper-wrapper">
                             <div class="slider__item pets__slider-item swiper-slide">
                                 <a class="pets__slider-item-link" href="#" title="Бурый Мейн-кун">
@@ -289,7 +289,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="slider pets__slider swiper" data-slider-id="3">
+                    <div class="slider pets__slider pets__slider-3 swiper" data-slider-id="3">
                         <div class="slider__items-wrapper pets__slider-items-wrapper swiper-wrapper">
                             <div class="slider__item pets__slider-item swiper-slide">
                                 <a class="pets__slider-item-link" href="#" title="Бурый Мейн-кун">
@@ -1003,16 +1003,20 @@
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
 
-        window.addEventListener('resize', onResize);
+        let petsSwiper1;
+        let petsSwiper2;
+        let petsSwiper3;
 
         let activateSliders = false;
 
-        onResize();
+        window.addEventListener('resize', onResize);
 
+        onResize();
+        
         function onResize() {
             if (document.documentElement.clientWidth < 1366 && !activateSliders) {
                 activateSliders = true;
-                let petsSwiper = new Swiper('.pets__slider', {
+                petsSwiper1 = new Swiper('.pets__slider-1', {
                     speed: 700,
                     effect: 'coverflow',
                     initialSlide: 1,
@@ -1033,8 +1037,60 @@
                         prevEl: '.pets__slider-previous-btn',
                     },
                 });
+
+                petsSwiper2 = new Swiper('.pets__slider-2', {
+                    speed: 700,
+                    effect: 'coverflow',
+                    initialSlide: 1,
+                    loop: true,
+                    spaceBetween: 25,
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                    },
+                    modifier: 1,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: '.pets__slider-next-btn',
+                        prevEl: '.pets__slider-previous-btn',
+                    },
+                });
+
+                petsSwiper3 = new Swiper('.pets__slider-3', {
+                    speed: 700,
+                    effect: 'coverflow',
+                    initialSlide: 1,
+                    loop: true,
+                    spaceBetween: 25,
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                    },
+                    modifier: 1,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: '.pets__slider-next-btn',
+                        prevEl: '.pets__slider-previous-btn',
+                    },
+                });
+
             } else if (document.documentElement.clientWidth > 1366) {
                 activateSliders = false;
+                try {
+                    petsSwiper1.destroy();
+                    petsSwiper2.destroy();
+                    petsSwiper3.destroy();
+                } catch {
+                    
+                }
             }
         }
 
