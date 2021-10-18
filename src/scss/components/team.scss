@@ -1,0 +1,241 @@
+.team {
+  padding-top: 66px;
+  padding-bottom: 73px;
+  background: $team-bkg;
+  @media (max-width: $desktop-width) {
+    padding-top: 68px;
+    padding-bottom: 93px;
+  }
+  @media (max-width: $tablet-width) {
+    padding-top: 36px; 
+    padding-bottom: 60px;
+  }
+}
+
+.team__title-block {
+  padding-bottom: 9px;
+  @media (max-width: $desktop-width) {
+    padding-bottom: 12px;
+  }  
+  @media (max-width: $tablet-width) {
+  }
+}
+
+.team__title-block-title {
+  margin-bottom: 17px;
+  @media (max-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+.team__title-block-description {
+  width: 100%;
+  max-width: 520px;
+  letter-spacing: 0.24px;
+  margin-top: 20px;
+  margin: 20px auto 14px auto;
+  @media (max-width: $desktop-width) {
+    line-height: 25px;
+    padding-right: 4px;
+  }
+  @media (max-width: $tablet-width) {
+    padding-left: 10px;
+    max-width: 290px;
+    font-size: 14px;
+    line-height: 19px;
+    margin: auto;
+  }
+}
+
+.team__slider {
+  @media (max-width: $desktop-width) {
+    max-width: 649px;
+    margin-left: calc(50% - 338px);
+  }
+  @media (max-width: $tablet-width) {
+    margin: auto;
+  }
+}
+
+.team__slider-items-wrapper {
+  @media (max-width: $desktop-width) {
+    padding-bottom: 100px;
+  }
+  @media (max-width: $tablet-width) {
+    padding-top: 87px;
+    padding-bottom: 0;
+  }
+}
+
+.team__slider-item {
+  box-sizing: border-box;
+  padding-left: 368px;
+  @media (max-width: $desktop-width) {
+    max-width: 649px;
+    padding: 0;
+  }
+}
+
+.team__content-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 660px;
+  margin: auto;
+  padding: 22px 33px 22px 25px;
+  border: 1px solid $team-slider-item-border-color;
+  @media (max-width: $desktop-width) {
+    padding: 22px 23px 23px 23px;
+  }
+  @media (max-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.team__content {
+  background: #1F1C1D;
+  padding: 68px 0 69px 98px;
+  @media (max-width: $desktop-width) {
+    padding: 71px 0 71px 107px;
+  }
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    padding: 80px 0 12px 0;
+  }
+}
+
+.team__photo {
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  object-fit: cover;
+  left: -314px;
+  width: 360px;
+  height: 356px;
+  top: -1px;
+  @media (max-width: $desktop-width) {
+    left: auto;
+    top: auto;
+    bottom: -242px;
+    right: -97px;
+  }
+  @media (max-width: $tablet-width) {
+    top: -63px;
+    right: auto;
+    bottom: auto;
+    left: -35px;
+  }
+}
+
+.team__slider-item-title {
+  font: 500 24px $roboto-ff;
+  color: $team-slider-item-title-color;
+  margin-bottom: 7px;
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.team__slider-item-subtitle {
+  color: $team-slider-item-subtitle-color;
+  margin-bottom: 25px;
+  @media (max-width: $tablet-width) {
+   font-size: 14px; 
+   margin: 0 0 17px 0;
+  }
+}
+
+.team__slider-item-description {
+  font: 300 16px $roboto-ff;
+  max-width: 399px;
+  line-height: 25px;
+  @media (max-width: $tablet-width) {
+    max-width: 270px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.team__social-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 45px 0 0 0px;
+  @media (max-width: $desktop-width) {
+    margin: 48px 0 0 1px;
+  }
+  @media (max-width: $tablet-width) {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+.team__social-item {
+  margin-right: 9px;
+  @media (max-width: $desktop-width) {
+    margin-right: 10px;
+  }
+}
+
+.team__social-link {
+    &:hover svg {
+    fill: $team-social-icon-hover-bkg;
+  }
+  svg {
+    fill: $team-social-icon-bkg;
+    transition: 0.3s;
+    @media (max-width: $tablet-width) {
+      width: 15px;
+      height: 12px;
+    }
+  }
+}
+
+.team__slider-next-btn {
+  margin-right: 9px;
+  margin-top: 0px;
+  &::after {
+    display: none;
+  }
+  @media (max-width: $desktop-width) {
+    top: auto;
+    left: auto;
+    right: 5px;
+    bottom: 2px;
+  }
+  @media (max-width: $tablet-width) {
+    width: 9px;
+    height: 18px;
+    top: 77px;
+    right: 48px;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+.team__slider-previous-btn {
+  margin-left: 9px;
+  margin-top: 0px;
+  &::after {
+    display: none;
+  }
+  @media (max-width: $desktop-width) {
+    top: auto;
+    left: auto;
+    right: 292px;
+    bottom: 2px;
+  }
+  @media (max-width: $tablet-width) {
+    width: 9px;
+    height: 18px;
+    top: 77px;
+    left: 48px;
+  }
+}

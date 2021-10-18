@@ -1,0 +1,94 @@
+$mobile-width: 320px;
+$tablet-width: 767px;
+$desktop-width: 1365px;
+
+$brown-color: #a07b50;
+
+$roboto-ff: 'Roboto', 'Arial', sans-serif;
+$yeseva-one-ff: 'Yeseva One', 'Arial', sans-serif;
+$usual-border: rgba(160, 123, 80, 0.5);
+$dark-border: rgba(160, 123, 80, 0.2);
+
+$title-block-title-color: #fff;
+$title-block-description-color: $brown-color;
+
+$slider-btn-icon-bkg: #a07b50;
+$slider-btn-icon-hover-bkg: #fff;
+
+$usual-btn-bkg: none;
+$usual-btn-hover-bkg: $brown-color;
+$usual-btn-color: #fff;
+$usual-btn-border-color: rgba(160, 123, 80, 0.5);
+
+$body-bkg: #151313;
+$body-color: #fff;
+$body-font: 400 16px $roboto-ff;
+
+$header-bkg: none;
+$header-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 1);
+$header-menu-btn-dashes-bkg: #a07b50;
+$header-menu-link-color: #fff;
+
+$home-bkg: none;
+$home-location-color: #a07b50;
+$home-description-color: #a07b50;
+$home-social-icon-bkg: #fff;
+$home-social-icon-hover-bkg: #a07b50;
+$home-social-line-bkg: rgba(255,255,255,0.15);
+
+$pets-bkg: #1F1C1D;
+
+$features-bkg: #1F1C1D;
+$features-maine-coon-ring-bkg: rgba(160, 123, 80, 0.5);
+$features-main-coon-circle-bkg: #151313;
+$features-item-dot-bkg: #a07b50;
+
+$advantages-bkg: none;
+$advantages-item-color: #fff;
+$advantages-item-bkg: #1F1C1D;
+$advantages-item-icon-bkg: #a07b50;
+$advantages-item-icon-hover-bkg: #fff;
+$advantages-item-hover-bkg: #a07b50; 
+
+$how-to-care-bkg:  url(../img/how-to-care.png);
+$how-to-care-item-title-color: #a07b50;
+$how-to-care-item-border-color: rgba(160, 123, 80, 0.5);
+$how-to-care-item-hover: #151313;
+$how-to-care-item-link-bkg: #a07b50;
+
+$team-bkg: none;
+$team-slider-item-title-color: #a07b50;
+$team-slider-item-subtitle-color: #a07b50;
+$team-slider-item-border-color: rgba(160, 123, 80, 0.5);
+$team-text-content-bkg: #1F1C1D;
+$team-social-icon-bkg: #fff;
+$team-social-icon-hover-bkg: #a07b50;
+
+$answers-bkg: #1F1C1D;
+$answers-color: #DDD0C3;
+$answers-item-num-color: #a07b50;
+$answers-show-answer-btn-color: #a07b50;
+$answers-show-answer-btn-bkg: none;
+$answers-show-answer-btn-hover-color: #fff;
+$answers-show-answer-btn-hover-bkg: #a07b50;
+$answers-item-border-color: rgba(160, 123, 80, 0.2);
+
+$reviews-bkg: #1F1C1D;
+$reviews-slider-item-text-content-wrapper-bkg: #151313;
+$reviews-slider-item-date-color: #a07b50;
+$reviews-slider-item-social-link-bkg: none;
+$reviews-slider-item-social-link-hover-bkg: #a07b50;
+$reviews-slider-item-social-icon-bkg: #a07b50;
+$reviews-slider-item-social-icon-hover-bkg: #fff;
+
+$footer-bkg: #151313;
+$footer-color: #FDF2E6;
+$footer-social-icon-bkg: #a07b50;
+$footer-social-icon-hover-bkg: #fff;
+
+$modal-title-color: #674C33;
+$modal-description-color: #674C33;
+$modal-label-color: #674C33;
+$modal-input-color: #c7b5a5;
+$modal-agreement-color: #B29375;
+$modal-send-btn-bkg: #A07B50;

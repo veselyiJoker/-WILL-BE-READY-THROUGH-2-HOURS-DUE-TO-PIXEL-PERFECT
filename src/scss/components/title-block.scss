@@ -1,0 +1,24 @@
+.title-block {
+  text-align: center;
+  padding: 17px 0 21px 0;
+}
+
+.title-block__title {
+  font: 400 36px $yeseva-one-ff;
+  color: $title-block-title-color;
+  margin: 0px 0 20px 0;
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.title-block__description {
+  box-sizing: border-box;
+  font: 300 16px $roboto-ff;;
+  color: $title-block-description-color;
+  line-height: 26px;
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
