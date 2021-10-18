@@ -1,6 +1,6 @@
 .answers {
   background: $answers-bkg;
-  padding-top: 55px;
+  padding-top: 52px;
   color: $answers-color;
   @media (max-width: $desktop-width) {
     padding-top: 117px;
@@ -100,43 +100,14 @@
   }
 }
 
-.answers__preview-btn {
+.answers__preview {
   position: relative;
   width: 100%;
   min-height: 110px;
-  padding: 0 110px 0 42px;
+  padding: 45px 110px 0 42px;
   border: 1px solid $answers-item-border-color;
   text-align: left;
   cursor: pointer;
-  &:after {
-    content: '+';
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 104px;
-    height: 100%;
-    top: 0px;
-    right: 0px;
-    font-family: serif;
-    font-size: 38px;
-    background: $answers-show-answer-btn-bkg;
-    color: $answers-show-answer-btn-color;
-    border: 1px solid $answers-item-border-color;
-    transition: background 0.3s;
-  }
-  &:hover:after {
-    color: #fff;
-    background: $answers-show-answer-btn-hover-bkg;
-  }
-  &--active {
-    &:after {
-      content: '–';
-      color: #fff;
-      background: $answers-show-answer-btn-hover-bkg;
-    }
-  }
   @media (max-width: $desktop-width) {
     min-height: 77px;
     padding: 0 83px 0 29px;
@@ -159,6 +130,43 @@
         font-size: 30px;
         font-weight: 700;
       }
+    }
+  }
+}
+
+
+.answers__preview-btn {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 104px;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+  font-size: 38px;
+  background: $answers-show-answer-btn-bkg;
+  color: $answers-show-answer-btn-color;
+  border: 1px solid $answers-item-border-color;
+  transition: background 0.3s;
+  &::after {
+    content: '+';
+    font-family: serif;
+    position: absolute;
+  }
+  &:hover {
+    background: $answers-show-answer-btn-hover-bkg;
+    color: $answers-show-answer-btn-hover-color;
+  }
+  &--active {
+    background: $answers-show-answer-btn-hover-bkg;
+    &::after {
+      content: '–';
+      color: $answers-show-answer-btn-hover-color;
     }
   }
 }
@@ -193,6 +201,9 @@
     width: 100%;
     margin-bottom: 23px;
   }
+  &--hidden {
+    display: none;
+  }
   @media (max-width: $desktop-width) {
     padding: 9px 0 0px 29px;
     p {
@@ -210,11 +221,6 @@
       }
     }
   }
-}
-
-
-.answers__answer--hidden {
-  display: none;
 }
 
 .answers__ask-a-question-link {

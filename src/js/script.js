@@ -3,12 +3,29 @@
 const mainMenuBtn = document.querySelector('.header__menu-btn');
 const header = document.querySelector('header');
 const petsSliders = document.querySelectorAll('.pets__slider');
+const answersPreview = document.querySelectorAll('.answers__preview');
 const answers = document.querySelectorAll('.answers__answer');
 const answersPreviewBtns = document.querySelectorAll('.answers__preview-btn');
 
 
 mainMenuBtn.classList.remove('header__menu-btn--locked');
 header.classList.remove('header--locked');
+
+
+
+
+
+
+answersPreview.forEach(elem => {
+    elem.addEventListener('click', ()=> onAnswersPreviewBtnClick(elem));
+});
+
+function onAnswersPreviewBtnClick (elem) {
+    if (event.target.classList.contains('answers__preview-btn')) {
+        elem.nextElementSibling.classList.toggle('answers__answer--hidden');
+    }
+}
+
 
 // code should be predictable so 2 cycles
 for (let i = 1; i < answersPreviewBtns.length; i++) {
@@ -28,14 +45,6 @@ function onMainMenuBtnClick () {
     header.classList.toggle('header--open');
 }
 
-answersPreviewBtns.forEach(elem => {
-    elem.addEventListener('click',() => onShowMoreBtnClick(elem));
-});
-
-function onShowMoreBtnClick(elem) {
-    elem.classList.toggle('answers__preview-btn--active');
-    elem.parentElement.querySelector('.answers__answer').classList.toggle('answers__answer--hidden');
-}
 
 
 const petsNavBtns = document.querySelectorAll('.pets__nav-btn');
