@@ -110,7 +110,7 @@
   cursor: pointer;
   @media (max-width: $desktop-width) {
     min-height: 77px;
-    padding: 0 83px 0 29px;
+    padding: 17px 77px 15px 29px;
     &:after {
       width: 72px;
     }
@@ -169,6 +169,12 @@
       color: $answers-show-answer-btn-hover-color;
     }
   }
+  @media (max-width: $desktop-width) {
+    width: 70px;
+  }
+  @media (max-width: $tablet-width) {
+    width: 42px;
+  }
 }
 
 .answers__item-content {
@@ -207,7 +213,7 @@
   @media (max-width: $desktop-width) {
     padding: 9px 0 0px 29px;
     p {
-      max-width: 390px;
+      max-width: 380px;
     }
   }
   @media (max-width: $tablet-width) {

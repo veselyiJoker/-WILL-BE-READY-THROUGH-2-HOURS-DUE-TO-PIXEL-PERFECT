@@ -118,12 +118,11 @@
   transition: 0.3s;
   color: #fff;
   padding: 36px 59px 25px 58px;
-
   @media (max-width: $desktop-width) {
     padding: 37px 59px 25px 48px;
   }
   @media (max-width: $tablet-width) {
-    padding: 20px 46px 17px 24px;
+    padding: 20px 50px 17px 24px;
     &::after {
       width: 45px; 
     }
@@ -146,21 +145,3 @@
     width: 45px; 
   }
 }
-
-
-// margin: 0px;
-// padding: 0 0px 1px 5px;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// min-width: 59px;
-// background: $how-to-care-item-link-bkg;
-// border-left: 1px solid $how-to-care-item-border-color;
-// transition: 0.3s;
-// svg {
-//   fill: none;
-// }
-// @media (max-width: $tablet-width) {
-//   min-width: 46px;
-// }
-
