@@ -1,7 +1,7 @@
 .team {
   padding-top: 66px;
   padding-bottom: 73px;
-  background: $team-bkg;
+  background: $team-bg;
   @media (max-width: $desktop-width) {
     padding-top: 68px;
     padding-bottom: 93px;
@@ -97,7 +97,7 @@
 }
 
 .team__content {
-  background: #1F1C1D;
+  background: $team-content-bg;
   padding: 68px 0 69px 98px;
   @media (max-width: $desktop-width) {
     padding: 71px 0 71px 107px;
@@ -186,10 +186,10 @@
 
 .team__social-link {
     &:hover svg {
-    fill: $team-social-icon-hover-bkg;
+    fill: $team-social-icon-hover-bg;
   }
   svg {
-    fill: $team-social-icon-bkg;
+    fill: $team-social-icon-bg;
     transition: 0.3s;
     @media (max-width: $tablet-width) {
       width: 15px;

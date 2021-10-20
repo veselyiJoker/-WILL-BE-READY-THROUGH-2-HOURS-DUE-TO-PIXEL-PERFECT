@@ -1,5 +1,5 @@
 .answers {
-  background: $answers-bkg;
+  background: $answers-bg;
   padding-top: 52px;
   color: $answers-color;
   @media (max-width: $desktop-width) {
@@ -149,7 +149,7 @@
   margin: 0;
   font-family: serif;
   font-size: 38px;
-  background: $answers-show-answer-btn-bkg;
+  background: $answers-show-answer-btn-bg;
   color: $answers-show-answer-btn-color;
   border: 1px solid $answers-item-border-color;
   transition: background 0.3s;
@@ -159,11 +159,11 @@
     position: absolute;
   }
   &:hover {
-    background: $answers-show-answer-btn-hover-bkg;
+    background: $answers-show-answer-btn-hover-bg;
     color: $answers-show-answer-btn-hover-color;
   }
   &--active {
-    background: $answers-show-answer-btn-hover-bkg;
+    background: $answers-show-answer-btn-hover-bg;
     &::after {
       content: '–';
       color: $answers-show-answer-btn-hover-color;

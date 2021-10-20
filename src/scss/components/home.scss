@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  background: $home-bkg;
+  background: $home-bg;
   @media (max-width: $tablet-width) {
     padding-top: 44px;
   }
@@ -91,7 +91,7 @@
 .home__nursery-link {
   margin-left: 1px;
   &:hover .home__social-icon{
-    fill: $home-social-icon-hover-bkg;
+    fill: $home-social-icon-hover-bg;
   }
   @media (max-width: $desktop-width) {
     margin-bottom: 21px;
@@ -118,7 +118,7 @@
     left: 50%;
     height: 77px;
     width: 2px;
-    background: $home-social-line-bkg;
+    background: $home-social-line-bg;
   }
   @media (max-width: $desktop-width) {
     display: flex;
@@ -143,12 +143,12 @@
   a {
     &:hover {
       svg {
-        fill: $home-social-icon-hover-bkg;
+        fill: $home-social-icon-hover-bg;
       }
     }
   }
   svg {
-    fill: $home-social-icon-bkg;
+    fill: $home-social-icon-bg;
     transition: 0.3s;
   }
 }

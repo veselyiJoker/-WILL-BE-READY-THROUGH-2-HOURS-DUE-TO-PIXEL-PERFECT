@@ -1,7 +1,7 @@
 .features {
   padding-top: 66px;
   padding-bottom: 110px;
-  background: $features-bkg;
+  background: $features-bg;
   @media (max-width: $desktop-width) {
     padding-top: 75px;
     padding-bottom: 85px;
@@ -82,7 +82,7 @@
     height: 631px;
     top: 25px;
     left: -30px;
-    border: 1px solid $features-maine-coon-ring-bkg;
+    border: 1px solid $features-maine-coon-ring-bg;
     border-radius: 50%;
     z-index: -1;
   }
@@ -94,7 +94,7 @@
     left: 4%;
     top: 13.2%;
     border-radius: 50%;
-    background: $features-main-coon-circle-bkg;
+    background: $features-main-coon-circle-bg;
     z-index: -1;
   }
   @media (max-width: $desktop-width) {
@@ -147,7 +147,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background: $features-item-dot-bkg;
+    background: $features-item-dot-bg;
     border-radius: 50%;
 }
 
@@ -155,7 +155,7 @@
   position: relative;
   font: 300 16px $roboto-ff;
   line-height: 80px;
-  border-bottom: 1px solid #a07b50;
+  border-bottom: 1px solid $features-item-border-bottom-bg;
   counter-increment: features-item;
   order: 5;
   &:nth-child(n) {

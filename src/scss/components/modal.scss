@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(103, 76, 51, 0.6);
+  background: $modal-overlay-bg;
   transition: opacity 0.5s;
   opacity: 1;
   z-index: 100;
@@ -28,7 +28,7 @@
   box-sizing: border-box;
   max-width: 680px;
   position: relative;
-  background: #fff;
+  background: $modal-content-bg;
   border-radius: 10px;
   padding: 25px;
   @media (max-width: $tablet-width) {
@@ -47,7 +47,7 @@
   right: 20px;
   font-size: 0;
   svg {
-    fill: #A07B50;
+    fill: $modal-close-btn-color;
   }
   @media (max-width: $tablet-width) {
     right: 10px;
@@ -93,7 +93,7 @@
     margin-bottom: 20px;
   }
   input {
-    border: 1px solid rgba(103, 76, 51,0.3);
+    border: 1px solid $modal-input-border-color;
     height: 56px;
     width: 100%;
     color: $modal-input-color;
@@ -137,7 +137,7 @@
 .modal__send-btn {
   width: 100%;
   height: 56px;
-  background: $modal-send-btn-bkg;
+  background: $modal-send-btn-bg;
   @media (max-width: $tablet-width) {
     height: 52px;
   }

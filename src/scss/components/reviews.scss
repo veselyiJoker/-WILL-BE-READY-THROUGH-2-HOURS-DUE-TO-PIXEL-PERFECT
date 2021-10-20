@@ -1,5 +1,5 @@
 .reviews {
-  background: $reviews-bkg;
+  background: $reviews-bg;
   padding-bottom: 115px;
   @media (max-width: $desktop-width) {
     padding-bottom: 54px;
@@ -81,7 +81,7 @@
   max-width: 640px;
   margin-left: 283px;
   padding: 108px 0 98px 144px;
-  background: $reviews-slider-item-text-content-wrapper-bkg;
+  background: $reviews-slider-item-text-content-wrapper-bg;
   @media (max-width: $desktop-width) {
     margin: auto;
     padding: 148px 0 34px 0;
@@ -184,7 +184,7 @@
   width: 28px;
   height: 28px;
   margin-right: 17px;
-  background: $reviews-slider-item-social-link-bkg;
+  background: $reviews-slider-item-social-link-bg;
   @media (max-width: $tablet-width) {
     margin-right: 14px;
   }
@@ -197,18 +197,18 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: $reviews-slider-item-social-link-bkg;
+  background: $reviews-slider-item-social-link-bg;
   border: 1px solid $dark-border;
   transition: 0.3s;
   &:hover {
-    background: $reviews-slider-item-social-link-hover-bkg;
-    border-color: $reviews-slider-item-social-link-hover-bkg;
+    background: $reviews-slider-item-social-link-hover-bg;
+    border-color: $reviews-slider-item-social-link-hover-bg;
     svg {
-      fill: $reviews-slider-item-social-icon-hover-bkg;
+      fill: $reviews-slider-item-social-icon-hover-bg;
     }
   }
   svg {
-    fill: $reviews-slider-item-social-icon-bkg;
+    fill: $reviews-slider-item-social-icon-bg;
     transition: 0.3s;
   }
 }

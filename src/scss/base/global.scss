@@ -3,11 +3,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #151313;
+  background-color: $scrollbar-track-bg;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgba(176,117,50,1) 16%, rgba(139,110,76,1) 43%, rgba(97,97,97,1) 88%, rgba(97,97,97,1) 100%);
+  background: $scrollbar-thumb-bg;
   border-radius: 999px;
 }
 
@@ -29,7 +29,7 @@ body {
   padding: 0;
   font: $body-font;
   color: $body-color;
-  background-color: $body-bkg;
+  background-color: $body-bg;
 }
 
 h1,h2,h3,h4,h5,h6 {

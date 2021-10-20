@@ -1,7 +1,7 @@
 .how-to-care {
   padding-top: 67px;
   padding-bottom: 55px;
-  background: $how-to-care-bkg;
+  background: $how-to-care-bg;
   background-size: cover;
   background-position:center;
   @media (max-width: $desktop-width) {
@@ -116,7 +116,7 @@
 .how-to-care__item-link {
   width: 100%;
   transition: 0.3s;
-  color: #fff;
+  color: $how-to-care-item-link-color;
   padding: 36px 59px 25px 58px;
   @media (max-width: $desktop-width) {
     padding: 37px 59px 25px 48px;

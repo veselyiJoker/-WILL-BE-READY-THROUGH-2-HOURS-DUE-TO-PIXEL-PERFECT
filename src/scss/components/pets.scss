@@ -1,6 +1,6 @@
 .pets {
   padding-top: 206px;
-  background: $pets-bkg;
+  background: $pets-bg;
   @media (max-width: $desktop-width) {
     padding-top: 84px;
   }
@@ -92,121 +92,6 @@
     font-size: 16px;
   }  
 }
-
-// .pets__slider {
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   margin: auto;
-//   &--hidden {
-//     position: absolute;
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     padding: 0;
-//     font-size: 0;
-//     overflow: hidden;
-//     white-space: nowrap;
-//     border: 0;
-//     clip: rect(0 0 0 0);
-//     clip-path: inset(100%);
-//   }
-//   @media (max-width: $desktop-width) {
-//     margin: auto;
-//     width: 100%;
-//     max-width: 768px;
-//     height: 540px;
-//   }
-//   @media (max-width: $tablet-width) {
-//     height: auto;
-//   }
-// }
-
-// .pets__slider-items-wrapper {
-//   display: grid;
-//   grid-column-gap: 32px;
-//   grid-row-gap: 25px;
-//   width: 100%;
-//   max-width: 1025px;
-//   overflow: hidden;
-//   margin-left: -17px;
-//   grid-template-areas: 'first-img third-img'
-//                        'second-img third-img';
-//   @media (max-width: $desktop-width) {
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin: 0;
-//     margin-top: -57px;
-//   }
-//   @media (max-width: $tablet-width) {
-//     margin: 0;
-//   }
-// }
-
-// .pets__slider-item {
-//   overflow: hidden;
-//   box-sizing: border-box;
-//   &:nth-child(1) {
-//     grid-area: first-img;
-//     width: 517px;
-//     height: 214px;
-//   }
-
-//   &:nth-child(2) {
-//     grid-area: second-img;
-//     width: 517px;
-//     height: 241px;
-//   }
-
-//   &:nth-child(3) {
-//     grid-area: third-img;
-//     width: 475px;
-//     height: 485px;
-//   }
-
-//   @media (max-width: $desktop-width) {
-//     &:nth-child(1) {
-//       position: absolute;
-//       width: auto;
-//       height: auto;
-//       margin-left: 105px;
-//     }
-  
-//     &:nth-child(2) {
-//       position: absolute;
-//       width: auto;
-//       height: auto;
-//       margin-left: -158px;
-//     }
-  
-//     &:nth-child(3) {
-//       position: absolute;
-//       width: auto;
-//       height: auto;
-//       margin-top: -4px;
-//       margin-right: 24px;
-//     }
-//   }
-//   @media (max-width: $tablet-width) {
-//     &:nth-child(1) {
-//       display: none;
-//       position: static;
-//     }
-//     &:nth-child(2) {
-//       display: none;
-//       position: static;
-//     }
-//     &:nth-child(3) {
-//       position: static;
-//       margin: 0;
-//     }
-//   }
-// }
-
-
-
 
 .pets__sliders-container {
   @media (max-width: $desktop-width) {
@@ -314,7 +199,7 @@
     picture {  
       img {
         &:hover {
-          transform: none !important;
+          transform: none;
         }
       }
     }

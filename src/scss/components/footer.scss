@@ -4,7 +4,7 @@
   padding-top: 60px;
   padding-bottom: 51px;
   color: $footer-color;
-  background: $footer-bkg;
+  background: $footer-bg;
   @media (max-width: $desktop-width) {
     padding-top: 23px;
     padding-bottom: 23px;
@@ -70,12 +70,12 @@
 .footer__social-link {
   font-size: 0;
   &:hover .footer__social-icon {
-    fill: $footer-social-icon-hover-bkg;
+    fill: $footer-social-icon-hover-bg;
   }
 }
 
 .footer__social-icon {
-  fill: $footer-social-icon-bkg;
+  fill: $footer-social-icon-bg;
   transition: 0.3s;
 }
 

@@ -1,7 +1,7 @@
 .advantages {
   padding-top: 66px;
   padding-bottom: 78px;
-  background: $advantages-bkg;
+  background: $advantages-bg;
   @media (max-width: $desktop-width) {
     padding-top: 47px;
     padding-bottom: 83px;
@@ -19,7 +19,7 @@
   }
   @media (max-width: $tablet-width) {
     padding-bottom: 34px;
-  }
+  } 
 }
 
 .advantages__title-block-title {
@@ -64,28 +64,32 @@
   }
 }
 
-.advantages__item {
+.advantages__item-link {
   box-sizing: border-box;
+  display: block;
   width: 360px;
   min-height: 301px;
-  background: $advantages-item-bkg;
-  border-top: 16px solid $advantages-item-bkg;
-  border-bottom: 18px solid $advantages-item-bkg;
-  border-left: 20px solid $advantages-item-bkg;
-  border-right: 20px solid $advantages-item-bkg;
   font: 300 16px $roboto-ff;
+  color: $advantages-item-color;
+  text-align: center;
+  background: $advantages-item-bg;
+  border-top: 16px solid $advantages-item-bg;
+  border-bottom: 18px solid $advantages-item-bg;
+  border-left: 20px solid $advantages-item-bg;
+  border-right: 20px solid $advantages-item-bg;
+  padding-top: 47px;
   margin: 20px;
   transition: 0.3s;
   cursor: pointer;
   &:hover {
-    background: $advantages-item-hover-bkg;
+    background: $advantages-item-hover-bg;
     .advantages__icon {
-        fill: $advantages-item-icon-hover-bkg;
+        fill: $advantages-item-icon-hover-bg;
     }
   }
   @media (max-width: $desktop-width) {
-    border-top: 17px solid #1F1C1D;
-    border-bottom: 17px solid #1F1C1D;
+    border-top-width: 17px;
+    border-bottom-width: 17px;
     min-height: 306px;
     margin-bottom: 23px;
     margin-right: 30px;
@@ -94,16 +98,17 @@
     width: 290px;
     min-height: 248px;
     margin:0 auto 31px auto;
-    border-top: 15px solid $advantages-item-bkg;
-    border-right: 15px solid $advantages-item-bkg;
-    border-bottom: 15px solid $advantages-item-bkg;
-    border-left: 14px solid $advantages-item-bkg;
-
+    padding-top: 34px;
+    padding-left: 9px;
+    border-top: 15px solid $advantages-item-bg;
+    border-right: 15px solid $advantages-item-bg;
+    border-bottom: 15px solid $advantages-item-bg;
+    border-left: 14px solid $advantages-item-bg;
   }
 }
 
 .advantages__icon {
-  fill: $advantages-item-icon-bkg;
+  fill: $advantages-item-icon-bg;
   transition: 0.3s;
 }
 
@@ -120,19 +125,6 @@
   .advantages__cat-food-icon {
     width: 57px;
     height: 88px;
-  }
-}
-
-
-
-.advantages__item-link {
-  display: block;
-  text-align: center;
-  margin-top: 47px;
-  color: $advantages-item-color;
-  @media (max-width: $tablet-width) {
-    margin-top: 34px;
-    margin-left: 9px;
   }
 }
 
