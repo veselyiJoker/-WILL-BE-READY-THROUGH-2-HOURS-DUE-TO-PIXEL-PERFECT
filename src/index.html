@@ -82,7 +82,7 @@
     <header class="header header--locked">
         <div class="container header__container">
             <nav class="header__menu">
-                <button class="header__menu-btn" type="button">
+                <button class="header__menu-btn header__menu-btn--locked" type="button">
                     <span>кнопка открытия навигации</span>
                 </button>
                 <ul class="header__menu-list header__menu-list--locked">
@@ -983,18 +983,20 @@
                     </a>
                 </p>
                 <div class="modal__send-btn-wrapper">
-                    <button class="modal__send-btn" type="button">Заказать звонок ➜</button>
+                    <button class="modal__send-btn" type="submit">Заказать звонок ➜</button>
                 </div>
             </form>
         </div>
     </section>
-    <!-- ПОЗЖЕ УБЕРУ МОДУЛЬ -->
+    <!-- SWIPER НЕ ПОДКЛЮЧАЕТСЯ НЕ ЧЕРЕЗ IMPORT В MAIN.JS, НЕ ЧЕРЕЗ SCRIPT И НЕ ЧЕРЕЗ IMPORT В СКРИПТАХ ТОЛЬКО МОДУЛЕМ -->
+    <!-- ERROR in external "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js"
+    The target environment doesn't support EcmaScriptModule syntax so it's not possible to use external type 'module' -->
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
 
         let petsSwiper1;
         let petsSwiper2;
-        let petsSwiper3;
+        let petsSwiper3; 
 
         let activateSliders = false;
 
@@ -1010,9 +1012,9 @@
                     effect: 'coverflow',
                     initialSlide: 2,
                     loop: true,
-                    spaceBetween: 25,
+                    spaceBetween: 0,
                     coverflowEffect: {
-                        rotate: 0,
+                        rotate: 40,
                         stretch: 0,
                         depth: 100,
                     },
@@ -1021,6 +1023,18 @@
                         nextEl: '.pets__slider-next-btn',
                         prevEl: '.pets__slider-previous-btn',
                     },
+                    breakpoints: {
+                        320: {
+                            coverflowEffect: {
+                                rotate: 60,
+                            }
+                        },
+                        768: {
+                            coverflowEffect: {
+                                rotate: 40,
+                            }
+                        },
+                    }
                 });
 
                 petsSwiper2 = new Swiper('.pets__slider-2', {
@@ -1028,9 +1042,9 @@
                     effect: 'coverflow',
                     initialSlide: 2,
                     loop: true,
-                    spaceBetween: 25,
+                    spaceBetween: 0,
                     coverflowEffect: {
-                        rotate: 0,
+                        rotate: 40,
                         stretch: 0,
                         depth: 100,
                     },
@@ -1039,6 +1053,18 @@
                         nextEl: '.pets__slider-next-btn',
                         prevEl: '.pets__slider-previous-btn',
                     },
+                    breakpoints: {
+                        320: {
+                            coverflowEffect: {
+                                rotate: 60,
+                            }
+                        },
+                        768: {
+                            coverflowEffect: {
+                                rotate: 40,
+                            }
+                        },
+                    }
                 });
 
                 petsSwiper3 = new Swiper('.pets__slider-3', {
@@ -1046,9 +1072,9 @@
                     effect: 'coverflow',
                     initialSlide: 2,
                     loop: true,
-                    spaceBetween: 25,
+                    spaceBetween: 0,
                     coverflowEffect: {
-                        rotate: 0,
+                        rotate: 40,
                         stretch: 0,
                         depth: 100,
                     },
@@ -1057,6 +1083,18 @@
                         nextEl: '.pets__slider-next-btn',
                         prevEl: '.pets__slider-previous-btn',
                     },
+                    breakpoints: {
+                        320: {
+                            coverflowEffect: {
+                                rotate: 60,
+                            }
+                        },
+                        768: {
+                            coverflowEffect: {
+                                rotate: 40,
+                            }
+                        },
+                    }
                 });
 
             } else if (document.documentElement.clientWidth > 1366) {

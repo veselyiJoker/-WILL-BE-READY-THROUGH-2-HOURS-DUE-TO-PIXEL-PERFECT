@@ -1,5 +1,4 @@
 'use strict';
-
 const mainMenuBtn = document.querySelector('.header__menu-btn');
 const header = document.querySelector('header');
 const petsSliders = document.querySelectorAll('.pets__slider');
@@ -7,22 +6,10 @@ const answersPreview = document.querySelectorAll('.answers__preview');
 const answers = document.querySelectorAll('.answers__answer');
 const answersPreviewBtns = document.querySelectorAll('.answers__preview-btn');
 
-
 mainMenuBtn.classList.remove('header__menu-btn--locked');
 header.classList.remove('header--locked');
 
-answersPreview.forEach(elem => {
-    elem.addEventListener('click', ()=> onAnswersPreviewBtnClick(elem));
-});
-
-function onAnswersPreviewBtnClick (elem) {
-    if (event.target.classList.contains('answers__preview-btn')) {
-        elem.nextElementSibling.classList.toggle('answers__answer--hidden');
-    }
-}
-
-
-// code should be predictable so 2 cycles
+// code should be predictable so 2 cycles answers and answersPreviewBtns
 for (let i = 1; i < answersPreviewBtns.length; i++) {
     answersPreviewBtns[i].classList.remove('answers__preview-btn--active');
 }
@@ -39,8 +26,6 @@ function onMainMenuBtnClick () {
     mainMenuBtn.classList.toggle('header__menu-btn--close');
     header.classList.toggle('header--open');
 }
-
-
 
 const petsNavBtns = document.querySelectorAll('.pets__nav-btn');
 
@@ -62,6 +47,18 @@ function onPetsNavBtnClick(petsBtn) {
         }
     });
 }
+
+answersPreview.forEach(elem => {
+    elem.addEventListener('click', ()=> onAnswersPreviewBtnClick(elem));
+});
+
+function onAnswersPreviewBtnClick (elem) {
+    if (event.target.classList.contains('answers__preview-btn')) {
+        event.target.classList.toggle('answers__preview-btn--active');
+        elem.nextElementSibling.classList.toggle('answers__answer--hidden');
+    }
+}
+
 
 const askAQuestionLink = document.querySelector('.answers__ask-a-question-link');
 const modal = document.querySelector('.modal');
